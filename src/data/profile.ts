@@ -2,6 +2,7 @@
 export const profile = {
   name: "Jose Miguel Santiago",
   email: "Josemiguelsantiagopersonal@gmail.com",
+  linkedinUrl: "https://www.linkedin.com/in/sntgjm/",
   role: "Web Developer & Virtual Assistant",
   degree: "Bachelor of Science in Information Technology",
   college: "STI College Ortigas-Cainta",

@@ -417,6 +417,15 @@ function Contact() {
             {profile.email}
             <Icon name="diagonal" />
           </a>
+          <a
+            className="contact-linkedin"
+            href={profile.linkedinUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Connect on LinkedIn
+            <Icon name="diagonal" />
+          </a>
           <button className="copy-email" type="button" onClick={copyEmail}>
             <Icon name={copied ? "check" : "copy"} />
             {copied ? "Copied to clipboard" : "Copy email address"}
