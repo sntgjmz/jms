@@ -1,0 +1,278 @@
+.section-appointment {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.information-appointment {
+    margin: 2rem 0rem 2rem 0rem;
+    max-width: auto;
+    padding: 0;
+}
+
+.add-account-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: .5rem;
+    max-width: 95%;
+    margin: 0 auto 0 auto;
+}
+
+.table-box {
+    margin: 0rem auto;
+}
+
+.table-row {
+    border-radius: 4px;
+    display: table;
+    width: 95%;
+    margin: 10px auto;
+    font-family: 'Poppins', sans-serif;
+    background: white;
+    padding: 12px 0;
+    color: #3d3d3d;
+    font-size: 1rem;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 50, 0.3);
+    transition: background-color 0.3s; 
+    cursor: pointer; 
+}
+
+.table-cell {
+    border-radius: 4px;
+    display: table-cell;
+    width: 20%;
+    text-align: center;
+    padding: 4px 10px;
+    border-right: 1px solid #33333354;
+    vertical-align: middle;
+    font-size: 0.9rem;
+}
+
+.table-head {
+    background-color:#5010a2;
+    box-shadow: none;
+    color: white;
+    font-weight: 1000;
+    font-size: 1rem;
+    cursor: default;
+}
+
+.table-head .table-cell {
+    border-right: none;
+}
+
+.search-container {
+    text-align: left;
+    margin: 1rem auto 0px auto;
+    max-width: 95%;
+}
+
+.search-account {
+    width: 100%;
+    height: 55px;
+    font-size: 1rem;
+    color: black;
+    outline: none;
+    border: 1px solid #9e9e9e;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.add-account {
+    width: 100%;
+    height: 55px;
+    padding: 15px 20px;
+    color: #fff;
+    background: #5010a2;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 1000;
+}
+
+.table-container {
+    height: 600px;
+    overflow: auto;
+}
+
+.fifth-cell {
+    border-right: none;
+}
+
+.today-appointment {
+    background-color: #FFFFFF; 
+}
+
+.week-appointment {
+    background-color: #DDC7F9; 
+}
+
+.month-appointment {
+    background-color: #BB90F4; 
+    color: white;
+}
+
+.upcoming-appointment {
+    background-color: #9958EE; 
+    color: white;
+}
+.upcoming-appointment:hover {
+    background-color: #8E45ED; 
+    color: white;
+}
+.indicator-cell, .custom-indicator{
+    box-shadow: none;
+    text-align: left;
+    font-weight: 1000;
+    border: none;
+    background-color: none;
+    background: none;
+    padding: 0 0;
+    cursor: default;
+}
+
+.custom-indicator {
+    padding: 15px 0 0;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow-y: scroll;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 3% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+}
+
+
+.close:hover {
+    color: #000;
+}
+
+.modal-title {
+    color: #5010a2;
+    margin-bottom: 1rem;
+    font-weight: 1000;
+
+}
+
+.remind-important {
+    color: #5010a2;
+    margin-top: 1rem;
+    font-weight: 1000;
+}
+
+.remind {
+    font-size: 12px;
+    color: #5010a2;
+}
+
+label {
+    text-align: left;
+    font-size: .8rem;
+    color: #5010a2;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color:#000000;
+}
+
+.type-content {
+    gap: .5rem;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    margin-top: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.button-content {
+    gap: .5rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.type-content, input {
+    width: 100%;
+}
+
+#approveButton {
+    width: 100%;
+    background-color: #5010a2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+#approveButton:hover {
+    background-color: #5010a2;
+}
+
+#rejectButton {
+    width: 100%;
+    color: #5010a2;
+    border: 1px solid #5010a2;
+    background-color: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+#rejectButton:hover {
+    transition: 0.5s ease;
+    background-color: #d0d0d0;
+}
+
+@media (max-width: 1024px) {
+    .modal-content {
+        background-color: #fff;
+        margin: 5% auto;
+        padding: 20px;
+        border-radius: 5px;
+        width: 90%;
+    }
+    .table-container {
+        font-size: 0.9rem;
+        height: 550px;
+        overflow: auto;
+    }    
+    .first-cell {
+        display: none;
+    }
+    .fifth-cell {
+        border-right: none;
+    }
+    .third-cell {
+        display: none;
+    }
+}

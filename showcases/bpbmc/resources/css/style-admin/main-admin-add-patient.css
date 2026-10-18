@@ -1,0 +1,359 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.login-container {
+    position: relative;
+    max-width: auto;
+    width: 95%;
+    margin: auto;
+    border: 1px solid #9e9e9e;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 30px;
+    color: #3F1179;
+    font-size: 16px;
+    font-weight: 500;
+    z-index: 0;
+}
+ .login-container header {
+    font-size: 1.5rem;
+    color: #3F1179;
+    font-weight: 1000;
+    text-align: left;
+}
+.login-container form {
+    margin-top: 30px;
+}
+
+.record-container {
+    position: relative;
+    max-width: auto;
+    width: 95%;
+    margin: auto;
+    border: 1px solid #9e9e9e;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 30px;
+    color: #3F1179;
+    font-size: 16px;
+    font-weight: 500;
+    z-index: 0;
+}
+ .record-container header {
+    font-size: 1.5rem;
+    color: #3F1179;
+    font-weight: 1000;
+    text-align: left;
+}
+.record-container form {
+    margin-top: 30px;
+}
+
+.record-container .input-box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form .input-box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form .input-box input {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    font-size: 1rem;
+    color: black;
+    outline: none;
+    border: 1px solid #9e9e9e;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.input-box input:focus {
+    outline: none;
+    border-color: #3F1179;
+}
+
+.input-box{
+    color: #3F1179;
+}
+
+.form .column {
+    display: flex;
+    column-gap: 15px;
+}
+
+.toggle-switch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid #9e9e9e;
+}
+
+.toggle-switch input {
+    display: none;
+}
+
+.toggle-switch label {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    border-radius: 4px;
+    padding: 8px 0;
+    cursor: pointer;
+    color: black;
+    background-color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-switch input:checked + label {
+    color: white;
+    background-color: #3F1179;
+}
+
+.toggle-switch label:hover {
+    background-color:#d4d4d47b;
+    color: rgb(0, 0, 0);
+}
+
+.title-signup {
+    margin-top: 10%;
+}
+
+.login-container h2 {
+    font-weight: 1000;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+
+.info-remind {
+    font-size: 12px;
+}
+
+.input-box {
+    position: relative;
+}
+
+.input-box select {
+    height: 50px;
+    width: 100%;
+    font-size: 1rem;
+    color: black;
+    outline: none;
+    border: 1px solid #9e9e9e;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.input-box select:focus {
+    outline: none;
+    border-color: #3F1179;
+}
+
+.login-container .patientportal-form-control, .record-container .patientportal-form-control {
+    width: 100%;
+    text-align: right; 
+    margin-top: 3rem; 
+}
+
+.patientportal-signup-button, .patientportal-add-record-button {
+    height: 0%;
+    padding: 15px 20px;
+    color: #fff;
+    background: #7251d3;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 1000;
+}
+
+.patientportal-signup-button:hover, .patientportal-add-record-button:hover {
+    background: #3F1179;
+}
+
+.upload-box {
+    display: none;
+}
+
+.input-box .hide-this {
+    color: white;
+}
+
+.input-box #notes{
+    max-width: 100%;
+    font-size: 1rem;
+    color: black;
+    outline: none;
+    border: 1px solid #9e9e9e;
+    border-radius: 6px;
+    padding: 10px 15px;
+    
+}
+
+#notes:focus{
+    outline: none;
+    border-color: #3F1179;
+}
+
+.custom-upload-box {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    font-size: 1rem;
+    color: black;
+    outline: none;
+    border: 1px solid #9e9e9e;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+}
+
+.file-label {
+    display: flex;
+    justify-content: space-between;
+    height: 49px;
+    width: 100%;
+    font-size: 1rem;
+    overflow: hidden;
+    color: rgb(158, 158, 158);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 1.6rem 0rem 0 1.1rem;
+    text-align: left;
+    z-index: 100;
+    font-weight: 300;
+}
+
+.upload-box:checked + .custom-upload-box .file-label {
+    background-color: #7251d3;
+    color: #ffffff;
+}
+
+.upload-box:checked + .custom-upload-box {
+    color: rgb(255, 247, 247);
+}
+
+.patientportal-form-control {
+    text-align: center;
+}
+
+.overlay-text {
+    margin-top: 2%;
+    color: rgb(158, 158, 158);
+}
+.settings-accordion{
+    position: relative;
+    width: 99%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #ccc;
+  }
+  
+ .main .accordion {
+      background-color: #fff;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+      border-bottom: 3px solid #ededed;
+      font-size: 16px;
+    }
+  
+.main .accordion i{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+    
+.main  .active, .accordion:hover {
+    background-color: #3F1179;
+    color: #fff;
+    font-weight: 1000;
+}
+    
+.main .panel {
+    width: 100%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    background-color: #fff;
+    display: none;
+    overflow: hidden;
+    border-bottom: 1px solid #fff;
+}
+  
+@media (min-width: 781px) and (max-width: 1330px){
+  
+    .form .column {
+        flex-wrap: wrap;
+    } 
+    .login-container {
+        width: 80%;
+        font-size: 14px;
+        font-weight: 1000;
+    }
+}
+
+@media (max-width: 780px) {
+    .form .column {
+        flex-wrap: wrap;
+    }
+    .record-container {
+        font-weight: 1000;
+        width: 90%;
+        font-size: 12px;
+    }
+    .login-container {
+        font-weight: 1000;
+        width: 90%;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 781px) and (max-width: 1330px){
+    .form .column {
+        flex-wrap: wrap;
+    } 
+    .login-container {
+        width: 80%;
+        font-size: 14px;
+        font-weight: 1000;
+    }
+}
+
+@media (max-width: 780px) {
+    .form .column {
+        flex-wrap: wrap;
+    } 
+    .login-container {
+        font-weight: 1000;
+        width: 90%;
+        font-size: 12px;
+    }
+}

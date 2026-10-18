@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "Isla Sakay — Mobile Frontend Demo",
+    "slug": "isla-sakay-mobile-showcase",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/isla-sakay-icon.png",
+    "scheme": "islasakaydemo",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "web": { "output": "single", "favicon": "./assets/images/favicon.png", "bundler": "metro" },
+    "plugins": ["expo-router"],
+    "experiments": { "typedRoutes": false, "baseUrl": "/demos/isla-sakay-mobile" },
+    "extra": { "router": {} }
+  }
+}

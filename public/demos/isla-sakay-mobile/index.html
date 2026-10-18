@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#102736" />
+    <link rel="icon" href="./favicon.ico" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content="Explore Isla Sakay's original passenger and boat-operator mobile interfaces using fictional sample data." />
+    <title>Isla Sakay — Mobile Frontend Demo</title>
+    <style>html,body{width:100%;height:100%;margin:0;background:#102736;overflow:hidden}iframe{display:block;width:100%;height:100%;border:0}noscript{display:block;padding:24px;color:#edf3f8;font:16px/1.6 system-ui}a{color:#f0c988}</style>
+  </head>
+  <body>
+    <iframe id="mobile-demo" title="Isla Sakay mobile app frontend — fictional sample data"></iframe>
+    <noscript>This interactive frontend demo requires JavaScript. <a href="../../#work">Return to the portfolio</a>.</noscript>
+    <script>
+      const parameters = new URLSearchParams(location.search);
+      const role = parameters.get('role');
+      const app = new URL('./app.html', location.href);
+      if (role === 'passenger' || role === 'operator') app.searchParams.set('role', role);
+      document.getElementById('mobile-demo').src = app.pathname + app.search;
+    </script>
+  </body>
+</html>

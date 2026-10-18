@@ -1,0 +1,13 @@
+scenario,source_row,original_sku,original_product_name,clean_sku,clean_product_name,category,price_usd,stock_quantity,source_issue,action_taken,qa_status,review_note
+Fictional portfolio sample,001,HM 101,linen DESK mat,HM-101,Linen Desk Mat,Workspace,24.00,18,Spacing and capitalization inconsistent,Standardized SKU and title case,Ready,Matched the supplied category and numeric fields
+Fictional portfolio sample,002,hm-102,Oak Cable tray,HM-102,Oak Cable Tray,Workspace,36.50,7,Lowercase SKU and mixed title case,Standardized SKU title and stock format,Ready,No source values changed
+Fictional portfolio sample,003,HM103,Ceramic Pen Cup ,HM-103,Ceramic Pen Cup,Desk,18.00,12,Missing SKU separator and trailing space,Added separator and removed extra space,Ready,Price converted to two decimal places
+Fictional portfolio sample,004,HM_104,cotton task pouch,HM-104,Cotton Task Pouch,Storage,21.75,9,Underscore in SKU and lowercase name,Applied naming rules,Review,Color option was blank in source and remains blank
+Fictional portfolio sample,005,hm 105,BRASS PAGE CLIPS,HM-105,Brass Page Clips,Desk,12.00,32,Spaces and all-caps product name,Normalized SKU and capitalization,Ready,Quantity confirmed as a whole number
+Fictional portfolio sample,006,HM-106,Felt laptop sleeve,HM-106,Felt Laptop Sleeve,Storage,29.50,14,Product title capitalization inconsistent,Applied title case,Ready,SKU already matched the rule
+Fictional portfolio sample,007,HM107,Bamboo Monitor Stand,HM-107,Bamboo Monitor Stand,Workspace,48.00,6,Missing SKU separator,Added standard separator,Ready,Category retained from source
+Fictional portfolio sample,008,HM - 108,recycled paper planner,HM-108,Recycled Paper Planner,Planning,16.00,25,Extra SKU spaces and lowercase product name,Removed spaces and applied title case,Ready,No unsupported product details added
+Fictional portfolio sample,009,HM109,Weekly Desk Pad,HM-109,Weekly Desk Pad,Planning,14.25,0,Missing SKU separator and stock stored as out,Added separator and converted out to zero,Ready,Zero stock preserves the source meaning
+Fictional portfolio sample,010,HM-110 ,Soft touch mouse pad,HM-110,Soft Touch Mouse Pad,Workspace,19.00,21,Trailing SKU space and inconsistent capitalization,Trimmed SKU and applied title case,Ready,Price normalized to two decimals
+Fictional portfolio sample,011,HM111,Travel Tech Organizer,HM-111,Travel Tech Organizer,Storage,,11,Missing SKU separator and price absent,Added separator and left price blank,Review,Price requires confirmation from the source owner
+Fictional portfolio sample,012,hm-112,Cork memo board,HM-112,Cork Memo Board,Workspace,27.00,8,Lowercase SKU and product capitalization,Standardized SKU and title,Ready,All required fields present

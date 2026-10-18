@@ -1,0 +1,75 @@
+  .home-section .welcome-patient{
+    padding: 15px;
+    text-align: center;
+  }
+  .home-section .welcome-patient .welcome-text{
+    font-size: 18px;
+  }
+  .home-section .home-grid{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      grid-gap: 10px;
+      margin-top: 20px;
+  }
+  .home-section .home-grid .my-appointment,
+  .home-section .home-grid .my-records{
+      padding-bottom: 10px;
+      margin-left: 5px;
+      margin-right: 5px;
+      background: #fff;
+      border-radius: 10px;
+      height: auto;
+  }
+  .home-section .home-grid .my-appointment .tools,
+  .home-section .home-grid .my-records .tools{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-inline-start: auto;
+    margin-top: 10px;
+  }
+  .home-section .home-grid .my-appointment .ma-txt,
+  .home-section .home-grid .my-records .mr-txt{
+      font-weight: bolder;
+      padding: 12px;
+      padding-left: 2%;
+      position: absolute;
+      border-radius: 10px;
+      width: calc(96%-10px);
+  }
+  .home-section .home-grid .my-appointment .ma-container,
+  .home-section .home-grid .my-records .mr-container{
+      display: flex;
+      max-height: 65vh;
+      overflow-x: auto;
+      margin-top: 10px;
+  }
+  .home-section .home-grid .my-appointment table,
+  .home-section .home-grid .my-records table{
+      margin-left: 2%;
+      justify-content: center;
+      border-collapse: collapse;
+      width: 96%;
+      margin-bottom: 10px;
+      text-wrap: nowrap;
+  }
+  .home-section .home-grid .my-appointment th,
+  .home-section .home-grid .my-records th{
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: bolder;
+      color: #696868;
+      padding-bottom: 5px;
+      padding-top: 5px;
+      text-align: left;
+      padding-left: 15px;
+  }
+  .home-section .home-grid .my-appointment td,
+  .home-section .home-grid .my-records td{
+    background-color: #ededed; 
+    cursor: pointer;
+  }
+  .home-section .home-grid .my-appointment .title,
+  .home-section .home-grid .my-records .title{
+    padding: 15px;
+  }

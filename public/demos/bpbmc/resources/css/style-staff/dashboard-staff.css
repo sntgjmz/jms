@@ -1,0 +1,271 @@
+.home-section .grid-db{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.home-section .grid-db article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    background: #fff;
+    border: 3px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all 0.5 smooth ease;
+}
+.home-section .grid-db .widget1:hover{
+    transition: all 0.5 smooth ease;
+    color: #fff;
+    background: #3F1179;
+    border: solid #3F1179;
+}
+.home-section .grid-db .widget2:hover{
+    transition: all 0.5 smooth ease;
+    color: #fff;
+    background: rgb(95, 27, 184);
+    border: solid rgb(95, 27, 184);
+}
+.home-section .grid-db .widget3:hover{
+    transition: all 0.5 smooth ease;
+    color: #fff;
+    background: rgb(71, 77, 183);
+    border: solid rgb(71, 77, 183);
+}
+.home-section .grid-db .widget4:hover{
+    transition: all 0.5 smooth ease;
+    color: #fff;
+    background: #3AA5D5;
+    border: solid #3AA5D5;
+}
+.home-section .grid-db .widget5:hover{
+  transition: all 0.5 smooth ease;
+  color: #fff;
+  background: #6dafce;
+  border: solid #6dafce;
+}
+.home-section .grid-db article .num{
+    font-size: 22px;
+    font-weight: bolder;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.home-section .grid-db article .art-text{
+    font-size: 14px;
+    font-weight: bolder;
+}
+.home-section .home-grid1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 5px;
+    margin-top: 20px;
+}
+.home-section .home-grid1 .appointment-approval,
+.home-section .home-grid1 .patient-verification,
+.home-section .home-grid2 .appointment-list,
+.home-section .home-grid3 .transaction-log,
+.home-section .home-grid3 .activity-log{
+    padding-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background: #fff;
+    border-radius: 10px;
+    height: auto;
+}
+.home-section .home-grid1 .appointment-approval .tools,
+.home-section .home-grid1 .patient-verification .tools,
+.home-section .home-grid2 .appointment-list .tools,
+.home-section .home-grid3 .transaction-log .tools,
+.home-section .home-grid3 .activity-log .tools{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-inline-start: auto;
+  margin-top: 10px;
+}
+.home-section .home-grid1 .appointment-approval .ar-txt,
+.home-section .home-grid1 .patient-verification .pv-txt,
+.home-section .home-grid2 .appointment-list .apl-txt,
+.home-section .home-grid3 .transaction-log .tl-txt,
+.home-section .home-grid3 .activity-log .al-txt{
+    font-weight: bolder;
+    padding: 12px;
+    padding-left: 2%;
+    position: absolute;
+    border-radius: 10px;
+    width: calc(96%-10px);
+}
+.home-section .home-grid1 .appointment-approval .ar-container,
+.home-section .home-grid1 .patient-verification .pv-container,
+.home-section .home-grid2 .appointment-list .apl-container,
+.home-section .home-grid3 .transaction-log .tl-container,
+.home-section .home-grid3 .activity-log .al-container{
+    display: flex;
+    max-height: 65vh;
+    overflow-x: auto;
+    margin-top: 10px;
+}
+.home-section .home-grid1 .appointment-approval table,
+.home-section .home-grid1 .patient-verification table,
+.home-section .home-grid2 .appointment-list table,
+.home-section .home-grid3 .transaction-log table,
+.home-section .home-grid3 .activity-log table{
+    margin-left: 2%;
+    justify-content: center;
+    border-collapse: collapse;
+    width: 96%;
+    margin-bottom: 10px;
+    text-wrap: nowrap;
+}
+.home-section .home-grid1 .appointment-approval th,
+.home-section .home-grid1 .patient-verification th{
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bolder;
+    color: #696868;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: left;
+    padding-left: 15px;
+}
+.home-section .home-grid1 .appointment-approval td,
+.home-section .home-grid1 .patient-verification td{
+  background-color: #ededed; 
+  cursor: pointer;
+}
+.home-section .home-grid1 .appointment-approval img,
+.home-section .home-grid1 .patient-verification img{
+  margin-left: 10px;
+  width: 40px;
+  border-radius: 50%;
+}
+.home-section .home-grid1 .appointment-approval .title,
+.home-section .home-grid1 .patient-verification .title{
+  font-weight: 600;
+  border-top: 3px solid #fff;
+  font-size: 14px;
+  padding-left: 15px;
+}
+.home-section .home-grid1 .appointment-approval .subtitle,
+.home-section .home-grid1 .patient-verification .subtitle{
+  font-size: 11px;
+  border-bottom: 3px solid #fff;
+  font-weight: 600;
+  color: #696868;
+  padding-left: 15px;
+}
+.home-section .home-grid1 .appointment-approval .image1,
+.home-section .home-grid1 .patient-verification .image1{
+  text-align: center;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  border-left: 3px solid #fff;
+}
+.home-section .home-grid1 .appointment-approval .image2{
+  text-align: center;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+.home-section .home-grid1 .appointment-approval .reject,
+.home-section .home-grid1 .patient-verification .reject{
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  padding: 5px;
+  text-align: right;
+}
+.home-section .home-grid1 .appointment-approval .approve,
+.home-section .home-grid1 .patient-verification .approve{
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  padding: 5px;
+  text-align: left;
+}
+.home-section .home-grid1 .appointment-approval .approve .bx-check,
+.home-section .home-grid1 .appointment-approval .reject .bx-x,
+.home-section .home-grid1 .patient-verification .approve .bx-check,
+.home-section .home-grid1 .patient-verification .reject .bx-x{
+  font-size: 24px;
+  text-align: left;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.home-section .home-grid1 .appointment-approval .approve .bx-check:hover,
+.home-section .home-grid1 .patient-verification .approve .bx-check:hover{
+  background-color: green;
+  color: white;
+}
+.home-section .home-grid1 .appointment-approval .reject .bx-x:hover,
+.home-section .home-grid1 .patient-verification .reject .bx-x:hover{
+  background-color: red;
+  color: white;
+}
+.home-section .home-grid2{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 5px;
+  margin-top: 10px;
+}
+.home-section .home-grid2 .appointment-list th,
+.home-section .home-grid3 .transaction-log th,
+.home-section .home-grid3 .activity-log th{
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bolder;
+  color: #696868;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-align: left;
+  padding-left: 15px;
+}
+.home-section .home-grid2 .appointment-list td,
+.home-section .home-grid3 .transaction-log td,
+.home-section .home-grid3 .activity-log td{
+  background-color: #ededed; 
+  cursor: pointer;
+  padding-left: 15px;
+}
+.home-section .home-grid2 .appointment-list img{
+  margin-left: 20px;
+  width: 40px;
+  border-radius: 50%;
+}
+.home-section .home-grid2 .appointment-list .title{
+  font-weight: 600;
+  border-top: 3px solid #fff;
+  font-size: 14px;
+}
+.home-section .home-grid2 .appointment-list .subtitle{
+  font-size: 11px;
+  border-bottom: 3px solid #fff;
+  font-weight: 600;
+  color: #696868;
+}
+.home-section .home-grid2 .appointment-list .image1{
+  text-align: center;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  border-left: 3px solid #fff;
+}
+.home-section .home-grid2 .appointment-list .image2{
+  text-align: center;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+.home-section .home-grid3{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 5px;
+  margin-top: 10px;
+}
+.home-section .home-grid3 .transaction-log .title,
+.home-section .home-grid3 .activity-log .title{
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  font-size: 14px;
+  padding: 5px;
+  padding-left: 15px;
+}

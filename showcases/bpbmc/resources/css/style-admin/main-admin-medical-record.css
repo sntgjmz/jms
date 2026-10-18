@@ -1,0 +1,302 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.table-box {
+    
+    margin: 0rem auto;
+}
+
+.table-row {
+    border-radius: 4px;
+    display: table;
+    width: 95%;
+    margin: 10px auto;
+    font-family: 'Poppins', sans-serif;
+    background: white;
+    padding: 12px 0;
+    color: #3d3d3d;
+    font-size: 1rem;
+    box-shadow: 0 1px 4px 0 rgba(0,0,50,0.3);
+}
+
+.table-cell {
+    border-radius: 4px;
+    display: table-cell;
+    width: 20%;
+    text-align: center;
+    padding: 4px 10px;
+    border-right: 1px solid #33333354;
+    vertical-align: middle;
+    font-size: 0.9rem;
+}
+
+.table-head {
+    background-color:#4f10a233;
+    background-color:#5010a2;
+    box-shadow: none;
+    color: white;
+    font-weight: 1000;
+    font-size: 1rem;
+}
+
+.table-head .table-cell {
+    border-right: none;
+}
+
+
+.fourth-cell {
+    border-right: none;
+}
+
+.add-account-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: .5rem;
+    max-width: 95%;
+    margin: 0 auto 0 auto;
+}
+
+.search-account {
+    width: 100%;
+    height: 55px;
+    font-size: 1rem;
+    color: black;
+    outline: none;
+    border: 1px solid #9e9e9e;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.add-account {
+    width: 100%;
+    height: 55px;
+    padding: 15px 20px;
+    color: #fff;
+    background: #5010a2;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 1000;
+}
+
+.type-content {
+    gap: .5rem;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    margin-top: .7rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.type-content-two {
+    gap: .5rem;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    margin-top: .7rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.input-box, label {
+    text-align: left;
+}
+
+.type-content, input {
+    width: 100%;
+}
+.add-account:hover {
+    background: #5010a2;
+    box-shadow: 10px 12px 50px -4px rgba(0,0,0,0.1);
+}
+
+.fa-solid .fa-filter{
+    color: #333333;
+}
+
+.fa-filter:hover {
+    color: #ede5f7;
+}
+
+
+.fa-pen-to-square {
+    color: #333333;
+}
+
+.fa-pen-to-square:hover {
+    color: #5010a2;
+}
+
+/*THIS IS MODAL*/
+
+.modal {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+  
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    width: 95%;
+    max-width: 1300px;
+    border-radius: 5px;
+    position: relative;
+    color: #3F1179;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.modal-content .title {
+    font-weight: 1000;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.info-remind {
+    font-size: 12px;
+}
+
+.close {
+    color: #5010a2;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+  
+.close:hover {
+    color: #3F1179;
+}
+  
+.column {
+    display: flex;
+    gap: 10px;
+}
+
+.input-box {
+    width: 100%;
+    margin-top: 9px;
+}
+
+.input-box input {
+    position: relative;
+    height: 45px;
+    width: 100%;
+    font-size: 0.9rem;
+    color: black;
+    outline: none;
+    border: 1px solid #9e9e9e;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.input-box select {
+    height: 45px;
+    width: 100%;
+    font-size: 0.9rem;
+    color: black;
+    outline: none;
+    border: 1px solid #9e9e9e;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+.add-account-container-s {
+    text-align: right;
+    margin: 1rem auto 0.7rem auto;
+}
+.add-account-s {
+    width: 100%;
+    height: 0%;
+    padding: 10px 15px;
+    color: #fff;
+    background: #5010a2;;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 1000;
+}
+.add-account-s:hover {
+    background-color: #3F1179;
+}
+
+.hidethis {
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    .add-account {
+        width: 100%;
+    }
+    .filter-class {
+        width: 100%;
+    }
+
+    .modal-content {
+        width: 100%;
+        margin: 10% auto;
+    }
+    .input-box input {
+        height: 40px;
+        width: 100%;
+        font-size: 0.7rem;
+    }
+    .input-box select {
+        height: 45px;
+        width: 100%;
+        font-size: 0.7rem;
+    }
+    .first-cell {
+        display: none;
+    }
+    .last-cell {
+        display: none;
+    }
+    
+    .add-account-s {
+        width: 100%;
+        height: 0%;
+        padding: 8px 16px;
+        color: #fff;
+        background: #5010a2;;
+        border: none;
+        border-radius: 4px;
+        font-size: 1rem;
+        cursor: pointer;
+        font-weight: 1000;
+    }
+    .input-box label {
+        font-size: 0.7rem;
+    }
+    .title {
+        font-size: 0.7rem;
+    }
+    .info-remind {
+        font-size: 0.7rem;
+    }
+}
+@media (max-width: 768px) {
+    .modal-content {
+      width: 90%;
+      margin: 15% auto;
+    }
+    .modal {
+        font-size: 1rem;
+    }
+    .type-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}

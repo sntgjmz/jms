@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="../">
+<meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="resources/vendor/fonts/fonts.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment History</title>
+    <link rel = "icon" href="resources/images/icon1.png" type="image"/>
+    <link rel = "stylesheet" href = "resources/css/style-patient/patient-navbar.css" type="text/css">
+    <link rel = "stylesheet" href = "resources/css/style-patient/patient-sidebar.css" type="text/css">
+    <link rel = "stylesheet" href = "resources/css/style-patient/patient-home_content.css" type="text/css">
+    <link rel = "stylesheet" href = "resources/css/style-patient/patient-appointment-history.css" type="text/css">
+    <link rel="stylesheet" href="resources/vendor/boxicons/css/boxicons.min.css">
+<link rel="stylesheet" href="demo/demo.css">
+</head>
+<body data-demo-page="main-patient-appointment-history" data-demo-role="patient">
+
+   <div class="sidebar close">
+        <ul class = "nav-list">
+            <li>
+                <a href="#/main-patient" data-demo-route="main-patient">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <ul class = "submenu blank">
+                    <li><a class = "links_name">Appointment History</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a>
+                        <i class='bx bx-id-card'></i>
+                        <span class="links_name">Patient Record</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="submenu">
+                    <li class="links_name">Patient Record</a></li>
+                    <li><a href="#/main-patient-medical-record" data-demo-route="main-patient-medical-record">Medical Records</a></li>
+                    <li><a href="#/main-patient-medical-result" data-demo-route="main-patient-medical-result">Medical Result</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#/main-patient-appointment" data-demo-route="main-patient-appointment">
+                    <i class="bx bx-calendar-event"></i>
+                    <span class="links_name">Appointment</span>
+                </a>
+                <ul class = "submenu blank">
+                    <li><a class = "links_name">Appointment</a></li>
+                </ul>
+            </li>
+            <li class="blk">
+                <div class="dropdown">
+                    <a>
+                        <i class='bx bx-history'></i>
+                        <span class="links_name">History</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="submenu">
+                    <li class ="links_name">History</a></li>
+                    <li><a href="#/main-patient-appointment-history" data-demo-route="main-patient-appointment-history">Appointment</a></li>
+                    <li><a href="#/main-patient-payment-history" data-demo-route="main-patient-payment-history">Payment</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#/main-patient-settings" data-demo-route="main-patient-settings">
+                    <i class='bx bx-cog'></i>
+                    <span class="links_name">Settings</span>
+                </a>
+                <ul class = "submenu blank">
+                    <li><a class = "links_name">Settings</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#/patient" data-demo-route="patient">
+                    <i class='bx bx-log-out-circle'></i>
+                    <span class="links_name">Logout</span>
+                </a>
+                <ul class = "submenu blank">
+                    <li><a class = "links_name">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="navbar">
+        <div class="logo-details">
+            <i class='bx bx-menu' ></i>
+            <a href="#/main-patient" data-demo-route="main-patient">
+                <img class = "Logo" src ="resources/images/icon1.png" alt="BPBPMC Logo" width="50px">
+                <div class="logo_name">BPBMC</div>
+            </a>
+        </div>
+    </div>
+    <section class="home-section">
+        <div class="home-content">
+            <span class="text">Appointment History</span>
+        </div>
+        <div class="table-box">
+        
+            <div class="table-row table-head">
+                <div class="table-cell first-cell">
+                    <p>Date & Time</p>
+                </div>
+                <div class="table-cell second-cell">
+                    <p>Doctor Name</p>
+                </div>
+                <div class="table-cell third-cell">
+                    <p>Clinic Branch</p>
+                </div>
+                <div class="table-cell fourth-cell">
+                    <p>Status</p>
+                </div>
+            </div>
+        </div>
+        <div class="table-container">
+    
+
+    <div class="table">
+        
+            <div class="table-row" 
+            data-appointment-id="__DEMO_appointment_id__"
+            data-doctor_name="__DEMO_doctor__"
+            data-patient_name="__DEMO_patient_name__"
+            data-patient_type="__DEMO_patient_type__"
+            data-email="__DEMO_email__"
+            data-clinic-branch="__DEMO_clinic_branch__"
+            data-appointment_time="__DEMO_time__"
+            data-appointment_date="__DEMO_date__">
+                <div class="table-cell first-cell"><p>__DEMO_time__</p></div>
+                <div class="table-cell second-cell"><p>__DEMO_doctor__</p></div>
+                <div class="table-cell third-cell"><p>__DEMO_clinic_branch__</p></div>
+                <div class="table-cell fourth-cell"><p>__DEMO_status__</p></div>
+            </div>
+        
+    </div>
+    
+    </div>
+    
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <form id="appointmentApprovalForm" action="#" data-demo-action="">
+            <span class="close" id="closePopup">&times;</span>        
+
+            <h2 class="modal-title">Details</h2>
+                <div id="modalContent">
+
+                </div>
+            </form>
+        </div>
+    </div>
+        <footer>
+            <span>Blessed Paul Bernard Medical Clinic|</span>
+            <span>© All Rights Reserved 2023</span>
+        </footer>
+    </section>
+    
+    
+    
+    
+<script src="resources/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="resources/library/swiper/swiper-bundle.min.js"></script>
+<script type="module" src="demo/runtime.js"></script>
+</body>
+</html>
+</body>
+</html>

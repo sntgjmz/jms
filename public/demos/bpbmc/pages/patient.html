@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<base href="../">
+<meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="resources/vendor/fonts/fonts.css">
+    <title>Patient Portal</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="resources/vendor/bootstrap/bootstrap.min.css">
+    <link rel="icon" type="png/jpeg" href="resources/images/icon1.png">
+    <link rel="stylesheet" href="resources/css/patient.css"/>
+    <link rel="stylesheet" href="demo/demo.css">
+</head>
+<body data-demo-page="patient" data-demo-role="public">
+    
+     <section class="side">
+        <img class="patientportal-left-section-image" src="resources/images/icon1.png" alt="logo">
+        <h2 class="patientportal-left-section-title">Patient Portal</h2>
+    </section>
+
+        <section class="main">
+            <div class="login-container">
+                <img class="patientportal-left-section-image-second" src="resources/images/icon1.png" alt="logo">
+                <h2 class="patientportal-right-section-title">Welcome</h2>
+                <h2 class="patientportal-right-section-title-portal">Patient Portal</h2>
+                <p class="patientportal-right-section-subtitle">Sign in to continue</p>
+
+                <form class="login-form" action="#" data-demo-action="">
+                    
+                        <p class="error-message" style="color: red; text-align: center; border: 1px solid red; border-radius: 6px; padding: 0.5rem; background-color: #ff000020;">
+                    __DEMO_login_error__
+                        </p>
+                    
+                    <div class="patientportal-form-control">
+                        <label class="form-label" for="login-email">Email</label>
+                        <input class="patientportal-form" type="email" id="login-email" name="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="patientportal-form-control">
+                        <label class="form-label" for="login-password">Password</label>
+                        <input class="patientportal-form" type="password" id="login-password" name="password" placeholder="Enter your password" required>
+                    </div>
+
+                    <div class="patientportal-form-control patientportal-link-forgot-container">
+                        <a class="adminportal-link patientportal-link-forgot" href="#/forgot-password" data-demo-route="forgot-password">Forgot Password?</a>
+                    </div>
+
+                    <div class="patientportal-form-control">
+                        <button class="patientportal-login-button" type="submit">Sign-in</button>
+                    </div>
+
+                    <div class="patientportal-form-control patientportal-sign-up-container">Don't have an account yet?
+                        <a class="adminportal-link-sign-up patientportal-sign-up" href="#/register" data-demo-route="register">Sign-up</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    
+    <script src="resources/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="resources/library/swiper/swiper-bundle.min.js"></script>
+<script type="module" src="demo/runtime.js"></script>
+</body>
+
+</html>

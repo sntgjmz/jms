@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+  }
+  
+.search-add-container{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#patientbtn{
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    text-wrap: nowrap;
+    padding: 5px;
+}
+
+#myInput{
+    width: 83%;
+    margin-left: 2%;
+    font-size: 14px;
+    padding: 10px 15px 10px 30px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    border-radius: 10px;
+  }
+
+  #addButton{
+    width: 12%;
+    margin-left: 1%;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-wrap: nowrap;
+  }
+  
+  #tb_patientlist {
+    border-collapse: collapse;
+    width: 96%;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    background-color: #fff;
+    margin-left: 2%;
+    border-radius: 10px;
+  }
+  
+  #tb_patientlist th, #tb_patientlist td {
+    text-align: left;
+    padding: 12px;
+    text-wrap: nowrap;
+  }
+  
+  #tb_patientlist tr {
+    border-bottom: 1px solid #ddd;
+  }
+
+  #tb_patientlist tr .billing_card:hover {
+    background-color: #3F1179;
+    color: #fff;
+    border-radius: 10px;
+  }
+  
+  #tb_patientlist tr.header{
+    text-transform: uppercase;
+    color: #696868;
+    background-color: #fff;
+  }
+  
+  .modal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }  
+
+  .billingmodal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 87.5%;
+    border-radius: 10px;
+  }
+  
+  .close-window {
+    margin-top: -7.5px;
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-window:hover,
+  .close-window:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .billingmodal-content header{
+    border-bottom: 1px solid #696868;
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .billingmodal-content .billing-form{
+    padding-top: 10px;
+    padding-left: 8px;
+    
+  }
+
+  .billingmodal-content .billing-form #remarks{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+
+  .billingmodal-content #previewbtn,
+  .billingmodal-content #cancelbtn{
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    text-wrap: nowrap;
+    padding: 5px;
+    margin: 5px;
+}
+
+.billingmodal-content #previewbtn:hover{
+    background-color: #00b922;
+    color: #ffffff;
+}
+
+.billingmodal-content #cancelbtn:hover{
+    background-color: #C70039;
+    color: #ffffff;
+}

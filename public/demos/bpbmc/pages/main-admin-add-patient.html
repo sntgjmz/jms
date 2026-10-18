@@ -1,0 +1,480 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="../">
+<meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="resources/vendor/fonts/fonts.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <title>Add Patient</title>
+    <link rel="icon" href="resources/images/icon1.png" type="image"/>
+
+    <link rel = "stylesheet" href="resources/css/style-admin/navbar.css" type="text/css">
+    <link rel = "stylesheet" href="resources/css/style-admin/sidebar.css" type="text/css">
+    <link rel = "stylesheet" href="resources/css/style-admin/home_content.css" type="text/css">
+    <link rel = "stylesheet" href="resources/css/style-admin/dashboard.css" type="text/css">
+    <link rel = "stylesheet" href="resources/css/style-admin/main-admin-add-patient.css" type="text/css">
+
+    
+    <link rel="stylesheet" href="resources/vendor/boxicons/css/boxicons.min.css">
+<link rel="stylesheet" href="demo/demo.css">
+</head>
+<body data-demo-page="main-admin-add-patient" data-demo-role="admin"> 
+
+<div class="sidebar close">
+        <ul class = "nav-list">
+            <li>
+                <a href="#/main-admin" data-demo-route="main-admin">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <ul class = "submenu blank">
+                    <li><a class = "links_name">Dashboard</a></li>
+                </ul>
+            </li>
+            <li class="blk">
+                <div class="dropdown">
+                    <a>
+                        <i class='bx bx-id-card'></i>
+                        <span class="links_name">Patient Record</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="submenu">
+                    <li class="links_name">Patient Record</a></li>
+                    <li><a href="#/main-admin-add-patient" data-demo-route="main-admin-add-patient">Add Patient Record</a></li>
+                    <li><a href="#/main-admin-list-of-patients" data-demo-route="main-admin-list-of-patients">List of Patients</a></li>
+                    <li><a href="#/main-admin-medical-record" data-demo-route="main-admin-medical-record">Medical Records</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a>
+                        <i class='bx bx-calendar-event'></i>
+                        <span class="links_name">Appointment</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="submenu">
+                    <li class= "links_name">Appointment</a></li>
+                    <li><a href="#/main-admin-add-appointment" data-demo-route="main-admin-add-appointment">Add Appointment</a></li>
+                    <li><a href="#/main-admin-calendar-of-appointment" data-demo-route="main-admin-calendar-of-appointment">Appointment List</a></li>
+                    <li><a href="#/main-admin-approval-of-appointment" data-demo-route="main-admin-approval-of-appointment">Approval of Appointment</a></li>
+                    <li><a href="#/main-admin-appointment-history" data-demo-route="main-admin-appointment-history">Appointment History</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a>
+                        <i class='bx bx-clinic'></i>
+                        <span class="links_name">Outpatient</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="submenu">
+                    <li class ="links_name">Outpatient</a></li>
+                    <li><a href="#/main-admin-outpatient-billing" data-demo-route="main-admin-outpatient-billing">Billing Process</a></li>
+                    <li><a href="#/main-admin-medical-result" data-demo-route="main-admin-medical-result">Medical Results</a></li>
+                    <li><a href="#/main-admin-diagnostic-service" data-demo-route="main-admin-diagnostic-service">Diagnostic Services</a></li>
+                    <li><a href="#/main-admin-medical-treatment" data-demo-route="main-admin-medical-treatment">Medical Treatment</a></li>
+                    <li><a href="#/main-admin-patient-monitoring" data-demo-route="main-admin-patient-monitoring">Patient Monitoring</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a>
+                        <i class='bx bx-group'></i>
+                        <span class="links_name">Manage Account</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="submenu">
+                    <li class ="links_name">Manage Account</a></li>
+                    <li><a href="#/main-admin-list-of-accounts" data-demo-route="main-admin-list-of-accounts">List of Account</a></li>
+                    <li><a href="#/main-admin-verify-patient" data-demo-route="main-admin-verify-patient">Verify Patient Account</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#/main-admin-backup-restore" data-demo-route="main-admin-backup-restore">
+                    <i class='bx bx-cloud-upload'></i>
+                    <span class="links_name">Backup and Restore</span>
+                </a>
+                <ul class = "submenu blank">
+                    <li><a class = "links_name">Backup and Restore</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#/main-admin-activity-log" data-demo-route="main-admin-activity-log">
+                    <i class='bx bx-history'></i>
+                    <span class="links_name">Activity Log</span>
+                </a>
+                <ul class = "submenu blank">
+                    <li><a class = "links_name">Activity Log</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#/main-admin-transaction-log" data-demo-route="main-admin-transaction-log">
+                    <i class='bx bx-book-content'></i>
+                    <span class="links_name">Transaction Log</span>
+                </a>
+                <ul class = "submenu blank">
+                    <li><a class = "links_name">Transaction Log</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#/main-admin-settings" data-demo-route="main-admin-settings">
+                    <i class='bx bx-cog'></i>
+                    <span class="links_name">Settings</span>
+                </a>
+                <ul class = "submenu blank">
+                    <li><a class = "links_name">Settings</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#/clinic" data-demo-route="clinic">
+                    <i class='bx bx-log-out-circle'></i>
+                    <span class="links_name">Logout</span>
+                </a>
+                <ul class="submenu blank">
+                    <li><a class="links_name">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+</div>
+<div class="navbar">
+        <div class="logo-details">
+            <i class='bx bx-menu' ></i>
+            <a href="#/main-admin" data-demo-route="main-admin">
+                <img class = "Logo" src="resources/images/icon1.png" alt="BPBPMC Logo" width="50px">
+                <div class="logo_name">BPBMC</div>
+            </a>
+        </div>
+        <section class = date-time>
+            <div class="display-date">
+                <span id="day">day</span>,
+                <span id="daynum">00</span>
+                <span id="month">month</span>
+                <span id="year">0000</span>
+            </div>
+            <div class="display-time"></div>
+        </section>
+</div>
+    <section class="home-section">
+    <div class="home-content">
+    </div>
+	
+    <section class="main">
+    <div class="settings-accordion">
+                    <button class="accordion"><i class='bx bx-user-circle'></i>Add Medical Record</i></button>
+                    <div class="panel">
+                    <div class="record-container">    
+                            <div class="tophead">
+                                <header>Add Medical Record</header>
+                            </div>
+                            
+                            <form class="form" action="#" data-demo-action="main-admin-add-patient-record.php">
+                            <div class="input-box">
+                                <label>Select Doctor <span style="color:red;">*</span></label>
+                                <select name="doctor" id="list" required>
+                                    <option value="none" selected disabled>Select Doctor</option>
+                                    
+                                        <option value="Dr. __DEMO_full_name__">
+                                        Dr. __DEMO_full_name__
+                                        </option>
+                                    
+                                </select>
+                            </div>
+                            </br>
+
+                            <input type="hidden" id="date_time" name="date_time" style="cursor: not-allowed;" value="" disabled/>
+                            <h2>Patient Information</h2>
+                            <div class="column">
+                                <div class="input-box">
+                                    <label>Purpose <span style="color:red;">*</span></label>
+                                    <select name="purpose" id="purpose" required>
+                                        <option value="" disabled selected>Select Purpose</option>
+                                        <option value="Check-up">Check-up</option>
+                                        <option value="Follow Up Check-up">Follow Up Check-up</option>
+                                    </select>
+                                </div>
+                                <div class="input-box">
+                                    <label>Date of Last Check-up</label>
+                                    <input type="date" name="date_lastcheckup"/>
+                                </div>
+                                <div class="input-box">
+                                    <label>Consultation Type <span style="color:red;">*</span></label>
+                                    <select name="consultation_type" id="consultation_type" required>
+                                        <option value="" disabled selected>Select Consultation Type</option>
+                                        <option value="Walk-in">Walk-in</option>
+                                        <option value="Appointment">Appointment</option>
+                                    </select>
+                                </div>
+                            </div>
+							<input type="hidden" name="user-id-log" value="__DEMO_user_id__">
+                            <div class="column">
+                                <div class="input-box">
+                                    <label for="patient-list">Patient Name <span style="color:red;">*</span></label>
+                                    <input list="patient-list" type="search" class="search" name="patient_name"  placeholder="Select Patient" id="input-a" required>
+                                    <datalist id="patient-list">
+                                        
+                                    </datalist>
+                                </div>
+                                <div class="input-box">
+                                    <label>Clinic Branch <span style="color:red;">*</span></label>
+                                    <div class="toggle-switch">
+                                        <input type="radio" id="taytay" name="clinic_branch" value="Taytay" required>
+                                        <label for="taytay">Taytay</label>
+                                        <input type="radio" id="pasig" name="clinic_branch" value="Pasig" required>
+                                        <label for="pasig">Pasig</label>
+                                    </div>
+                                </div>
+                            </div>
+							<input type="hidden" id="email-input" name="email-m">
+
+                            <br><h2>Pre-Assessment</h2>
+                            <div class="column">
+                                <div class="input-box">
+                                    <label>Weight <span style="color:red;">*</span></label>
+                                    <input type="number" name="weight" placeholder="in lbs" min="1" max="999"
+                                    type = "number"
+                                    maxlength = "3" required/>
+                                </div>
+                                <div class="input-box">
+                                    <label>Height <span style="color:red;">*</span></label>
+                                    <input type="number" name="height" placeholder="in cm" min="1" max="999" type = "number"
+                                    maxlength = "3" required />
+                                </div>
+                                <div class="input-box">
+                                    <label>Blood Pressure <span style="color:red;">*</span></label>
+                                    <input type="text" name="blood_pressure" placeholder="Systolic/Diastolic"  maxlength="7" required/>
+                                </div>
+                                <div class="input-box">
+                                    <label>Body Temperature <span style="color:red;">*</span></label>
+                                    <input type="text" name="body_temperature" placeholder="in °C" maxlength="4" required />
+                                </div>
+                            </div>
+                            <br><h2>Common Symptoms</h2>
+                            <div class="column">
+                                
+                                <div class="input-box">
+                                    <label>Colds? <span style="color:red;">*</span></label>
+                                    <div class="toggle-switch">
+                                        <input type="radio" id="oo" name="colds" value="Yes" required>
+                                        <label for="oo">Yes</label>
+                                        <input type="radio" id="hindi" name="colds" value="No" required>
+                                        <label for="hindi">No</label>
+                                    </div>
+                                </div>
+                                <div class="input-box">
+                                    <label>Fever? <span style="color:red;">*</span></label>
+                                    <div class="toggle-switch">
+                                        <input type="radio" id="yes" name="fever" value="Yes" required>
+                                        <label for="yes">Yes</label>
+                                        <input type="radio" id="no" name="fever" value="No" required>
+                                        <label for="no">No</label>
+                                    </div>
+                                </div>
+                                <div class="input-box">
+                                    <label>Cough? <span style="color:red;">*</span></label>
+                                    <div class="toggle-switch">
+                                        <input type="radio" id="hai" name="cough" value="Yes" required>
+                                        <label for="hai">Yes</label>
+                                        <input type="radio" id="iie" name="cough" value="No" required>
+                                        <label for="iie">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                            </br><h2>Notes</h2>
+                            <div class="column">
+                                    
+                                <div class="input-box">
+                                    <label>Clinic Notes<span style="color:red;">*</span></label>
+                                    <input name="ClinicNotes" id="ClinicNotes" cols="30" rows="10"></input>
+                                </div>                
+
+                                <div class="input-box">
+                                    <label>Patient Concern<span style="color:red;">*</span></label>
+                                    <input name="notes" id="notes" cols="30" rows="10"></input>
+                                </div>
+                                
+                            </div>
+                            <div class="patientportal-form-control">
+                                <button type="submit" class="patientportal-add-record-button">Add Record</button>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                    <button class="accordion"><i class='bx bx-user-pin'></i>Add Patient Account</button>
+                    <div class="panel">
+                        <div class="login-container">    
+                            <div class="tophead">
+                                <header>Add Patient Account</header>
+                            </div>
+                            <form class="form" action="#" data-demo-action="main-admin-add-patient-add.php">
+                            <h2>Basic Information</h2>
+                            <div class="column">
+                                <div class="input-box">
+                                    <label>Last Name <span style="color:red;">*</span></label>
+                                    <input type="text" name="last_name" placeholder="Enter your last name" required />
+                                </div>
+                                <div class="input-box">
+                                    <label>First Name <span style="color:red;">*</span></label>
+                                    <input type="text" name="first_name" placeholder="Enter your first name" required />
+                                </div>
+                                <div class="input-box">
+                                    <label>Middle Name <span style="color:red;">*</span></label>
+                                    <input type="text" name="middle_name" placeholder="Enter your middle name" required />
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="input-box">
+                                    <label>Suffix</label>
+                                    <input type="text" name="suffix" placeholder="" />
+                                </div>
+                                <div class="input-box">
+                                    <label>Birthdate <span style="color:red;">*</span></label>
+                                    <input type="date" name="birthdate" placeholder="Enter your last name" required />
+                                </div>
+                                <div class="input-box">
+                                    <label>Sex <span style="color:red;">*</span></label>
+                                    <div class="toggle-switch">
+                                        <input type="radio" id="male" name="gender" value="male" required>
+                                        <label for="male">Male</label>
+                                        <input type="radio" id="female" name="gender" value="female" required>
+                                        <label for="female">Female</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2>Present Address</h2>
+                            <div class="column">
+                                <div class="input-box">
+                                    <label>Country <span style="color:red;">*</span></label>
+                                    <select name="country" required>
+                                        <option value="Philippines">Philippines</option>
+                                    </select>
+                                </div>
+                                <div class="input-box">
+                                    <label>House No. & Street <span style="color:red;">*</span></label>
+                                    <input type="text" name="house_street" placeholder="ex. Blk 36 Saudi Street" required />
+                                </div>
+                                <div class="input-box">
+                                    <label>Barangay <span style="color:red;">*</span></label>
+                                    <input type="text" name="barangay" placeholder="ex. Sta.Ana" required />
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="input-box">
+                                    <label>Municipality/City <span style="color:red;">*</span></label>
+                                    <input type="text" name="municipality_city" placeholder="ex. Taytay" required />
+                                </div>
+                                <div class="input-box">
+                                    <label>Region <span style="color:red;">*</span></label>
+                                    <input type="text" name="region" placeholder="ex. IV-A" required />
+                                </div>
+                                <div class="input-box">
+                                    <label>Postal Code <span style="color:red;">*</span></label>
+                                    <input type="text" name="postal_code" id="postal_code" placeholder="ex. 1920" maxlength="4" required/>
+                                </div>
+                            </div>
+                            <h2>Patient Account</h2>
+                            <span class="info-remind">* Kindly double check your email and contact number. Your email will serve as your login account for BPBMC. Please ensure that the email is accessible, and your contact number will be used for important notifications.
+                            </span></span>
+                            <div class="column">
+                                <div class="input-box">
+                                    <label>Email <span style="color:red;">*</span></label>
+                                    <input type="email" name="email" placeholder="Enter email" required />
+                                    
+                                        <p class="error-message" style="color: red; font-size: 12px;">__DEMO_email_error__</p>
+                                    
+                                </div>
+                                <div class="input-box">
+                                    <label>Password <span style="color:red;">*</span></label>
+                                    <input type="password" name="password" placeholder="Enter password" required />
+                                </div>
+                                <div class="input-box">
+                                    <label>Contact Number <span style="color:red;">*</span></label>
+                                    <input type="tel" name="contactNumber" maxlength="11" required />
+                                </div>
+                            </div>
+
+                            <h2>Are you a new patient or an existing patient? <span style="color:red;">*</span></h2>
+                            <div class="column">
+                                <div class="input-box">
+                                    <div class="toggle-switch">
+                                        <input type="radio" id="existing" name="patient-type" value="existing" required>
+                                        <label for="existing">Existing Patient</label>
+                                        <input type="radio" id="new" name="patient-type" value="new" required>
+                                        <label for="new">New Patient</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2>ID Information</h2>
+                            <span class="info-remind">* Kindly submit an ID with your name and date of birth. Please ensure that account details and ID matches the information submitted.</span>
+                            <div class="column">
+                                <div class="input-box">
+                                    <label>ID Type <span style="color:red;">*</span></label>
+                                    <select name="idtype" required>
+                                        <option value="votersid">Voter's ID</option>
+                                        <option value="passport">Passport</option>
+                                        <option value="driverslicense">Driver's License</option>
+                                        <option value="postalid">Postal ID</option>
+                                        <option value="sssgsis">SSS/GSIS</option>
+                                        <option value="tin">Tax Identification Number (TIN) Card</option>
+                                        <option value="seniorpwd">Senior/PWD ID</option>
+                                        <option value="prc">PRC</option>
+                                        <option value="nbi">NBI</option>
+                                        <option value="schoolid">School ID</option>
+                                        <option value="birthcertificate">Birth Certificate</option>
+                                        <option value="bpbmcemployeeid">BPBMC Employee ID</option>
+                                    </select>
+                                </div>
+                                <div class="input-box">
+                                    <label>ID Number <span style="color:red;">*</span></label>
+                                    <input type="text" name="id_number" required/>
+                                    
+                                        <p class="error-message" style="color: red; font-size: 12px;">__DEMO_id_number_error__</p>
+                                    
+                                </div>
+                                <input type="hidden" name="user-id-logg" value="__DEMO_user_id__">
+                                <div class="input-box">
+                                    <label class="hide-this">Upload an ID</label>
+                                        <div class="custom-upload-box">
+                                        <input type="file" name="id_image" id="idUpload" class="upload-box" accept="image/png, image/jpeg, image/gif" required/>
+                                    <div class="file-label">
+                                        <label for="idUpload" id="selected-file-name">
+                                            <p>Upload an ID</p>
+                                            <span class="overlay-text">---------------------------------------------------</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="patientportal-form-control">
+                                <button type="submit" class="patientportal-signup-button">Sign-up</button>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+
+                </div>
+        </section>
+
+    </section>
+    <footer>
+            <span>Blessed Paul Bernard Medical Clinic |</span>
+            <span>© All Rights Reserved 2023</span>
+    </footer>
+    
+    
+    
+    
+    
+    
+<script src="resources/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="resources/library/swiper/swiper-bundle.min.js"></script>
+<script type="module" src="demo/runtime.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#5010a2">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="description" content="BPBMC clinic website and four original portal designs, presented with fictional sample data.">
+    <link rel="icon" href="resources/images/icon1.png">
+    <link rel="stylesheet" href="demo/shell.css">
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll('a[href="/#work"]').forEach((link) => link.setAttribute("href", "../../#work"));
+      });
+    </script>
+    <title>BPBMC — Frontend Showcase</title>
+  </head>
+  <body>
+    <header class="demo-toolbar">
+      <div class="demo-heading"><strong>BPBMC · FRONTEND DEMO</strong><span>Fictional records · changes reset on reload</span></div>
+      <nav aria-label="Choose an interface" class="demo-roles">
+        <a href="#/index" data-role="public">Public website</a>
+        <a href="#/main-admin" data-role="admin">Admin</a>
+        <a href="#/main-staff" data-role="staff">Staff</a>
+        <a href="#/main-doctor" data-role="doctor">Doctor</a>
+        <a href="#/main-patient" data-role="patient">Patient</a>
+      </nav>
+      <div class="demo-controls"><label for="demo-screen">Screen</label><select id="demo-screen" aria-label="Explore screens"></select><button id="demo-reset" type="button">Reset</button><a href="/#work">Portfolio ↗</a></div>
+    </header>
+    <iframe id="bpbmc-frame" title="BPBMC original website interface with fictional data"></iframe>
+    <div id="demo-toast" role="status" aria-live="polite" hidden></div>
+    <noscript>This interactive showcase requires JavaScript. <a href="/#work">Return to the portfolio.</a></noscript>
+    <script type="module" src="demo/shell.js"></script>
+  </body>
+</html>

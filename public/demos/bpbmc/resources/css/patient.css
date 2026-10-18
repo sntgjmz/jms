@@ -1,0 +1,245 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    font-family: 'Poppins', sans-serif; 
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*all about left-side*/
+.side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(172deg, rgba(76, 79, 168, 0.425) 0%, rgba(76, 79, 168, 0.664) 20.52%, rgb(79, 16, 162) 100%);
+}
+
+/*IMAGE*/
+.patientportal-left-section-image {
+    width: 15rem;
+    height: 15rem;
+}
+.patientportal-left-section-image-second {
+    display: none;
+}
+
+/*ADMIN PORTAL TEXT*/
+.patientportal-left-section-title {
+    margin: 3% 0 0% 0;
+    text-align: center;
+    font-weight: 1000;
+    color: white;
+}
+
+/*all about right-side*/
+.login-container {
+    max-width: 450px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#3F1179;
+    font-size: 16px;
+}
+
+/*WELCOME TEXT*/
+.patientportal-right-section-title {
+    font-weight: 1000;
+}
+
+/*SIGN IN TO CONTINUE TEXT*/
+.patientportal-right-section-subtitle {
+    margin: 0% 0% 10% 0%;
+    font-size: .8rem;
+    font-weight: 1000;
+    color:#5f5f5f;
+}
+.patientportal-right-section-title-portal {
+    font-weight: 1000;
+    display: none;
+}
+.patientportal-form-control {
+    margin-bottom: 25px;
+}
+
+.form-label {
+    font-weight: 1000;
+}
+
+.patientportal-form{
+    width: 100%;
+    padding: 10px 1rem;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    border: 1px solid #9e9e9e;
+    border-radius: 4px;
+}
+
+.patientportal-form:focus {
+    outline: none;
+    border-color: #3F1179;
+}
+
+
+/*forgot password?*/
+.adminportal-link {
+    font-size: .8rem;
+    font-weight: 500;
+    color:#636363;
+}
+
+.adminportal-link:hover {
+    color: #3F1179;
+}
+  
+.patientportal-link-forgot-container {
+    font-size: .8rem;
+    font-weight: 500;
+    text-align: right;
+}
+  
+.patientportal-link-forgot {
+    color: #666666;
+}
+
+
+/*sign in*/
+.patientportal-login-button {
+    width: 100%;
+    height: 0%;
+    padding: 15px 0;
+    color: #fff;
+    margin: 3% 0% 0% 0%;
+    background: #7251d3;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 1000;
+}
+.patientportal-login-button:hover {
+    background: #3F1179;
+}
+
+/*sign up*/
+.patientportal-sign-up-container {
+    font-size: .8rem;
+    font-weight: 500;
+    text-align: center;
+    color: #666666;
+}
+
+.patientportal-sign-up{
+    font-size: .8rem;
+    color: #3F1179;
+}
+.patientportal-sign-up:hover{
+    text-decoration-line: underline;
+    color: #3F1179;
+}
+
+@media (min-width: 781px) and (max-width: 1330px){
+    .patientportal-left-section-image {
+        width: 10rem;
+        height: 10rem;
+    }
+    .patientportal-left-section-title {
+        font-size: 23px;
+    }
+    .patientportal-form{
+        font-size: 13px;
+    }
+    .patientportal-login-button {
+        font-size: 13px;
+    }
+    .login-with-google {
+        font-size: 13px;
+    }
+    .patientportal-sign-up-container {
+        font-size: 13px;
+    }
+    
+    .patientportal-sign-up{
+        font-size: 13px;
+        color: #3F1179;
+    }
+    .patientportal-sign-up:hover{
+        text-decoration-line: underline;
+        color: #3F1179;
+    }
+}
+@media (max-width: 780px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .login-container {
+        padding: 20px;
+        font-size: 12px;
+    }
+    .patientportal-form{
+        font-size: 12px;
+    }
+    .patientportal-login-button {
+        font-size: 12px;
+    }
+    .login-with-google {
+        font-size: 12px;
+    }
+    .patientportal-right-section-title {
+        display: none;
+    }
+    .patientportal-right-section-title-portal {
+        font-size: 23px;
+        display: block;
+    }
+    .patientportal-left-section-image-second {
+        display: block;
+        width: 10rem;
+        height: 10rem;
+        margin: 1rem;
+        margin-top: -3rem;
+    }
+    .adminportal-link {
+        font-size: .8rem;
+        font-weight: 500;
+        color:#636363;
+    }
+    .side {
+        display: none;
+    }
+    .patientportal-sign-up-container {
+        font-size: 12px;
+    }
+    
+    .patientportal-sign-up{
+        font-size: 12px;
+        color: #3F1179;
+    }
+    .patientportal-sign-up:hover{
+        text-decoration-line: underline;
+        color: #3F1179;
+    }
+ 
+}

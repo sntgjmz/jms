@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="theme-color" content="#272f2b" />
+    <script>
+      (() => {
+        const storageKey = "jose-portfolio-theme";
+        const root = document.documentElement;
+        let savedTheme = null;
+
+        try {
+          savedTheme = window.localStorage.getItem(storageKey);
+        } catch {
+          savedTheme = null;
+        }
+
+        const theme =
+          savedTheme === "light" || savedTheme === "dark"
+            ? savedTheme
+            : window.matchMedia("(prefers-color-scheme: dark)").matches
+              ? "dark"
+              : "light";
+
+        root.dataset.theme = theme;
+        root.style.colorScheme = theme;
+        document
+          .querySelector('meta[name="theme-color"]')
+          ?.setAttribute("content", theme === "dark" ? "#272f2b" : "#f6f1e7");
+      })();
+    </script>
+    <meta
+      name="description"
+      content="Portfolio of Jose Miguel Santiago, a web developer and virtual assistant offering responsive web development, records organization, data entry, research, documentation, and organized admin support."
+    />
+    <meta name="author" content="Jose Miguel Santiago" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Jose Miguel Santiago Portfolio" />
+    <meta property="og:title" content="Jose Miguel Santiago | Web Developer &amp; Virtual Assistant" />
+    <meta
+      property="og:description"
+      content="Explore responsive web and mobile projects plus virtual assistance practice samples covering records organization, data entry, research, content planning, and admin support."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Jose Miguel Santiago | Web Developer &amp; Virtual Assistant" />
+    <meta
+      name="twitter:description"
+      content="Explore responsive web projects and downloadable virtual assistance practice samples by Jose Miguel Santiago."
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jose Miguel Santiago",
+        "description": "Web developer and virtual assistant offering responsive web development, records organization, data entry, research, content planning, and administrative support.",
+        "jobTitle": "Web Developer & Virtual Assistant",
+        "email": "mailto:Josemiguelsantiagopersonal@gmail.com",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "STI College Ortigas-Cainta"
+        },
+        "knowsAbout": [
+          "React",
+          "TypeScript",
+          "PHP",
+          "MySQL",
+          "Responsive web development",
+          "Virtual assistance",
+          "Data entry",
+          "Online research",
+          "Administrative support",
+          "Content planning"
+        ]
+      }
+    </script>
+    <title>Jose Miguel Santiago | Web Developer &amp; Virtual Assistant</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

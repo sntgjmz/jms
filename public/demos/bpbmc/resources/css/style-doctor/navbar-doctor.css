@@ -1,0 +1,127 @@
+.navbar .logo-details{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-inline-end: auto;
+}
+.navbar .logo-details .Logo{
+    width: 30px;
+    line-height: 20px;
+    margin-left: 10px;
+}
+.navbar .logo-details .logo_name{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    padding-left: 10px;
+    transition: 0.3s ease;
+    transition-delay: 0.1s;
+    margin-right: 20px;
+}
+.navbar{
+    background: #5010a2;
+    box-shadow: -1px 11px 74px -20px rgba(0,0,0,1);
+    -webkit-box-shadow: -1px 11px 74px -20px rgba(0,0,0,1);
+    -moz-box-shadow: -1px 11px 74px -20px rgba(0,0,0,1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 3rem;
+    transition: 0.3s all smooth ease;
+    border-radius: 0 0 10px 0;
+    font-size: 14px;
+}
+.navbar .logo-details .bx-menu{
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-left: 25px;
+    padding: 7px;
+    cursor: pointer;
+}
+.navbar .logo-details .bx-menu:hover{
+    background: #3F1179;
+    transition: 0.3s all ease;
+}
+.navbar .logo-details a{
+    display: flex;
+    cursor: pointer;
+    text-transform: none;
+}
+.navbar .date-time{
+    position: fixed;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-inline-start: auto;
+    margin-inline-start: auto;
+}
+.navbar .date-time .display-date,
+.navbar .date-time .display-time{
+    margin: 0 10px 0 10px;
+}
+.navbar .profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    margin-inline-start: auto;
+}
+.navbar .profile img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    border: 5px solid rgb(95, 27, 184);
+    margin-right: 10px;
+    border-radius: 50%;
+    transition: all 0.5 smooth ease;
+    cursor: pointer;
+}
+.navbar .profile:hover img{
+    position: relative;
+    width: 30px;
+    border: 2px solid #f7d994;
+    transition: all 0.5 smooth ease;
+}
+.navbar .profile .text{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.navbar .profile:hover .text,
+.navbar .profile:hover i{
+    cursor: pointer;
+    color: #f7d994;
+}
+/* Landscape Tablets */
+@media only screen and (min-width: 768px){
+    .navbar{
+        border-radius: 0 0 0px 0;
+    }
+}
+/* Portrait tables and large phones */
+@media only screen and (min-width: 600px){
+    .navbar{
+        border-radius: 0 0 0px 0;
+    }
+}
+/* Extra small devices such phones */
+@media only screen and (max-width: 599px){
+    .navbar{
+        border-radius: 0 0 0px 0;
+    }
+    .navbar .logo-details .logo_name{
+        display: none;
+    }
+    .navbar .date-time{
+        display: none;
+    }
+}

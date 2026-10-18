@@ -1,0 +1,45 @@
+.settings-accordion{
+  position: relative;
+  width: 99%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  margin-top: 30px;
+  padding: 10px;
+  background-color: #ccc;
+}
+
+.accordion {
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border-bottom: 3px solid #ededed;
+    font-size: 16px;
+  }
+
+  .accordion i{
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #3F1179;
+    color: #fff;
+    font-weight: 1000;
+  }
+  
+  .panel {
+    width: 100%;
+    padding-left: 6vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    background-color: #fff;
+    display: none;
+    overflow: hidden;
+    border-bottom: 1px solid #fff;
+  }

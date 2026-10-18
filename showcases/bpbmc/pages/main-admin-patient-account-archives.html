@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="../">
+<meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="resources/vendor/fonts/fonts.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <title>Patient Account Archives</title>
+    <link rel="icon" href="resources/images/icon1.png" type="image"/>
+
+    <link rel = "stylesheet" href="resources/css/style-admin/navbar.css" type="text/css">
+    <link rel = "stylesheet" href="resources/css/style-admin/archives-home-content.css" type="text/css">
+    <link rel = "stylesheet" href="resources/css/style-admin/dashboard.css" type="text/css">
+    <link rel = "stylesheet" href="resources/css/style-admin/archives.css" type="text/css">
+    
+    <link rel="stylesheet" href="resources/vendor/boxicons/css/boxicons.min.css">
+<link rel="stylesheet" href="demo/demo.css">
+</head>
+<body data-demo-page="main-admin-patient-account-archives" data-demo-role="admin"> 
+
+        
+    <div class="navbar">
+        <div class="logo-details">
+            <a href="#/main-admin" data-demo-route="main-admin">
+                <img class = "Logo" src="resources/images/icon1.png" alt="BPBPMC Logo" width="50px">
+                <div class="logo_name">BPBMC</div>
+            </a>
+        </div>
+        <section class = date-time>
+            <div class="display-date">
+                <span id="day">day</span>,
+                <span id="daynum">00</span>
+                <span id="month">month</span>
+                <span id="year">0000</span>
+            </div>
+            <div class="display-time"></div>
+        </section>
+    </div>
+    <section class="home-section">
+
+    <div class="home-content">
+        <span class="text">Patient Account Archives</span>
+    </div>
+    <div class="nav" style="margin: 30px;"><a href="#/main-admin-settings" style="text-decoration: none; color: black;" data-demo-route="main-admin-settings">< Back to Settings</a></div>
+    <div class="add-account-container">
+        <input class="search-account" type="text" id="search-input" placeholder="Search Patient">
+        </div>
+        <div class="table-box">
+         
+            <div class="table-row table-head">
+                <div class="table-cell first-cell">
+                    <p>ID</p>
+                </div>
+                <div class="table-cell second-cell">
+                    <p>Name</p>
+                </div>
+                <div class="table-cell third-cell">
+                    <p>Age</p>
+                </div>
+                <div class="table-cell fourth-cell">
+                    <p>Patient Type</p>
+                </div>
+                <div class="table-cell fifth-cell">
+                    <p>Status</p>
+                </div>
+            </div>
+        </div>
+        <div class="table-container">
+            
+            <div class="table" id="patientTable">
+                
+                    <div class="table-row"
+                    data-patient-id="__DEMO_id__"
+                    data-first-name="__DEMO_first_name__"
+                    data-last-name="__DEMO_last_name__"
+                    data-middle-name="__DEMO_middle_name__"
+                    data-suffix="__DEMO_suffix__"
+                    data-age="__DEMO_age__"
+                    data-birthdate="__DEMO_birthdate__"
+                    data-sex="__DEMO_sex__"
+                    data-country="__DEMO_country__"
+                    data-house-street="__DEMO_house_street__"
+                    data-barangay="__DEMO_barangay__"
+                    data-municipality-city="__DEMO_municipality_city__"
+                    data-region="__DEMO_region__"
+                    data-postal-code="__DEMO_postal_code__"
+                    data-email="__DEMO_email__"
+                    data-contact-number="__DEMO_contact_number__"
+                    data-patient-type="__DEMO_patient_type__"
+                    data-id-type="__DEMO_id_type__"
+                    data-id-number="__DEMO_id_number__"
+                    data-verification-status="__DEMO_verification_status__"
+                    >
+                        <div class="table-cell first-cell"><p>__DEMO_id__</p></div>
+                        <div class="table-cell second-cell"><p>__DEMO_full_name__</p></div>
+                        <div class="table-cell third-cell"><p>__DEMO_age__</p></div>
+                        <div class="table-cell fourth-cell"><p>__DEMO_patient_type__</p></div>
+                        <div class="table-cell fifth-cell"><span style="font-weight: bold;"><p>__DEMO_isArchived__</p></span></div>
+                    </div>
+                
+            </div>
+            
+        </div>
+        <style>
+            .table-container {
+                height: 480px;
+                overflow: auto;
+            }
+        </style>
+    <input type="hidden" name="user-id-log" value="__DEMO_user_id__">
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalDetails">Details go here.</p>
+            <button class="restore" id="restoreButton">Yes, Restore</button>
+        </div>
+    </div>
+    </section>
+    
+    
+<script src="resources/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="resources/library/swiper/swiper-bundle.min.js"></script>
+<script type="module" src="demo/runtime.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="../">
+<meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="resources/vendor/fonts/fonts.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <title>Doctor Dashboard</title>
+    <link rel="icon" href="resources/images/icon1.png" type="image"/>
+    <link rel = "stylesheet" href = "resources/css/style-doctor/navbar-doctor.css" type="text/css">
+    <link rel = "stylesheet" href = "resources/css/style-doctor/sidebar-doctor.css" type="text/css">
+    <link rel = "stylesheet" href = "resources/css/style-doctor/home_content-doctor.css" type="text/css">
+    <link rel = "stylesheet" href = "resources/css/style-doctor/main-doctor.css" type="text/css">
+    <link rel="stylesheet" href="resources/vendor/boxicons/css/boxicons.min.css">
+<link rel="stylesheet" href="demo/demo.css">
+</head>
+<body data-demo-page="main-doctor" data-demo-role="doctor">
+
+    <div class="sidebar close">
+        <ul class = "nav-list">
+            <li class="blk">
+                <a href="#/main-doctor" data-demo-route="main-doctor">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <ul class = "submenu blank">
+                    <li><a class = "links_name">Dashboard</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a>
+                        <i class='bx bx-id-card'></i>
+                        <span class="links_name">Patient Record</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="submenu">
+                    <li class="links_name">Patient Record</a></li>
+                    <li><a href="#/main-doctor-list-of-patients" data-demo-route="main-doctor-list-of-patients">List of Patients</a></li>
+                    <li><a href="#/main-doctor-medical-record" data-demo-route="main-doctor-medical-record">Medical Record</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a>
+                        <i class='bx bx-calendar-event'></i>
+                        <span class="links_name">Appointment</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="submenu">
+                    <li class= "links_name">Appointment</a></li>
+                    <li><a href="#/main-doctor-add-appointment" data-demo-route="main-doctor-add-appointment">Add Appointment</a></li>
+                    <li><a href="#/main-doctor-appointment-list" data-demo-route="main-doctor-appointment-list">Appointment List</a></li>
+                    <li><a href="#/main-doctor-appointment-history" data-demo-route="main-doctor-appointment-history">Appointment History</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#/main-doctor-settings" data-demo-route="main-doctor-settings">
+                    <i class='bx bx-cog'></i>
+                    <span class="links_name">Settings</span>
+                </a>
+                <ul class = "submenu blank">
+                    <li><a class = "links_name">Settings</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#/clinic" data-demo-route="clinic">
+                    <i class='bx bx-log-out-circle'></i>
+                    <span class="links_name">Logout</span>
+                </a>
+                <ul class="submenu blank">
+                    <li><a class="links_name">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="navbar">
+        <div class="logo-details">
+            <i class='bx bx-menu' ></i>
+            <a href="#/main-doctor" data-demo-route="main-doctor">
+                <img class = "Logo" src ="resources/images/icon1.png" alt="BPBPMC Logo" width="50px">
+                <div class="logo_name">BPBMC</div>
+            </a>
+        </div>
+        <section class = date-time>
+            <div class="display-date">
+                <span id="day">day</span>,
+                <span id="daynum">00</span>
+                <span id="month">month</span>
+                <span id="year">0000</span>
+            </div>
+            <div class="display-time"></div>
+        </section>
+    </div>
+    
+    
+    <section class="home-section">
+        <div class="home-content">
+            <span class="text">Doctor Dashboard</span>
+        </div>
+        <div class="welcome-doctor">
+            <div class="welcome-text"><p>Welcome, <b>Dr. __DEMO_username__</b></p></div>
+        </div>
+        <div class="grid-db">
+
+            <article class="widget2" style="border-left: 5px solid rgb(95, 27, 184);">
+                <i class='bx bx-walk'></i>
+                <span class="num">__DEMO_totalVerifiedPatient__</span>
+                <span class="art-text">Verified Patients</span>
+            </article>
+
+            <a href="#/main-doctor-appointment-list" data-demo-route="main-doctor-appointment-list">
+            <article class="widget3" style="border-left: 5px solid rgb(71, 77, 183);">
+                <i class='bx bx-calendar'></i>
+                <span class="num">__DEMO_totalAppointmentsToday__</span>
+                <span class="art-text">Total of Appointments</span>
+            </article>
+            </a>
+        </div>
+
+        
+
+        <div class="home-grid"> 
+        <div class="appointment-list">
+                <div class="apl-txt"><a href="#/main-doctor-appointment-list" style="text-decoration: none; color: #000;" data-demo-route="main-doctor-appointment-list">Appointment for Today</i></a></div>
+              
+                <div class="apl-container">
+                <table id="tb_appointment">
+                    <tr class = theader>
+                        <th>Patient Details</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Doctor Details</th>
+                    </tr>
+                    
+                    </table>
+                </div>
+            </div>    
+            <div class="appointment-history">
+                <div class="ah-txt"><a href="#/main-doctor-appointment-history" style="text-decoration: none; color: #000;" data-demo-route="main-doctor-appointment-history">Appointment History</a></div>
+                
+                    <div class="ah-container">
+                        <table class="tb_appointment-history">
+                            <tr class="theader">
+                                <th>Appointment ID</th>
+                                <th>Patient Name</th>
+                                <th>Date and Time</th>
+                            </tr>
+                            
+                    </table>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <span>Blessed Paul Bernard Medical Clinic |</span>
+            <span>© All Rights Reserved 2023</span>
+        </footer>
+        </section>
+    </section> 
+    
+    
+    
+<script src="resources/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="resources/library/swiper/swiper-bundle.min.js"></script>
+<script type="module" src="demo/runtime.js"></script>
+</body>
+</html>

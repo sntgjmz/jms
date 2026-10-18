@@ -1,0 +1,311 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.table-box {
+    margin: 0rem auto;
+}
+
+.table-row {
+    border-radius: 4px;
+    display: table;
+    width: 95%;
+    margin: 10px auto;
+    font-family: 'Poppins', sans-serif;
+    background: white;
+    padding: 12px 0;
+    color: #3d3d3d;
+    font-size: 1rem;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 50, 0.3);
+    transition: background-color 0.3s; 
+    cursor: pointer; 
+}
+
+.table-cell {
+    border-radius: 4px;
+    display: table-cell;
+    width: 20%;
+    text-align: center;
+    padding: 4px 10px;
+    border-right: 1px solid #33333354;
+    vertical-align: middle;
+    font-size: 0.9rem;
+}
+
+.table-head {
+    background-color:#5010a2;
+    box-shadow: none;
+    color: white;
+    font-weight: 1000;
+    font-size: 1rem;
+    cursor: default;
+}
+
+.table-head .table-cell {
+    border-right: none;
+}
+
+
+.last-cell {
+    border-right: none;
+}
+
+.first-cell {
+    max-width: 5%;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.add-account-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: .5rem;
+    max-width: 95%;
+    margin: 0 auto 0 auto;
+}
+.search-account {
+    width: 100%;
+    height: 55px;
+    font-size: 1rem;
+    color: black;
+    outline: none;
+    border: 1px solid #9e9e9e;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+.fa-solid .fa-filter{
+    color: #333333;
+}
+
+.fa-filter:hover {
+    color: #ede5f7;
+}
+
+
+.fa-pen-to-square {
+    color: #333333;
+}
+
+.fa-pen-to-square:hover {
+    color: #5010a2;
+}
+
+/*THIS IS MODAL*/
+
+
+.close:hover {
+    color: #3F1179;
+}
+  
+.column {
+    display: flex;
+    gap: 10px;
+}
+
+.input-box {
+    width: 100%;
+    margin-top: 9px;
+}
+
+.input-box input {
+    position: relative;
+    height: 45px;
+    width: 100%;
+    font-size: 0.9rem;
+    color: black;
+    outline: none;
+    border: 1px solid #9e9e9e;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.input-box select {
+    height: 45px;
+    width: 100%;
+    font-size: 0.9rem;
+    color: black;
+    outline: none;
+    border: 1px solid #9e9e9e;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+
+/* MODAL */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow-y: scroll;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 3% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.close {
+    color: #5010a2;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+  
+.close:hover {
+    color: #3F1179;
+}
+
+.title-modal {
+    font-weight: 500;
+  }
+  
+.title-modal:after {
+    content: ":";
+}
+
+.modal-title {
+    color: #5010a2;
+    margin-bottom: 1rem;
+}
+
+label {
+    text-align: left;
+    font-size: .8rem;
+    color: #5010a2;
+    font-weight: 600;
+}
+  
+select {
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color:#000000;
+}
+
+input {
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #000000;
+}
+
+.type-content {
+    gap: .5rem;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    margin-top: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.type-content, input {
+    width: 100%;
+}
+
+#archiveButton {
+    width: 100%;
+    padding: 12px 15px;
+    color: #fff;
+    background: #5010a2;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 1000;
+    margin-top: 1rem;
+}
+
+#archiveButton:hover {
+    background: #3F1179;
+}
+
+@media (max-width: 1024px) {
+    .add-account {
+        width: 100%;
+    }
+    .filter-class {
+        width: 100%;
+    }
+    .modal-content {
+        width: 90%;
+        max-width: 400px;
+        margin: 5% auto;
+    }
+    .input-box input {
+        height: 40px;
+        width: 100%;
+        font-size: 0.7rem;
+    }
+    .input-box select {
+        height: 45px;
+        width: 100%;
+        font-size: 0.7rem;
+    }
+    .first-cell {
+        display: none;
+    }
+    .third-cell {
+        display: none;
+    }
+    .fifth-cell {
+        border-right: none;
+    }
+    .add-account-s {
+        width: 100%;
+        height: 0%;
+        padding: 8px 16px;
+        color: #fff;
+        background: #5010a2;;
+        border: none;
+        border-radius: 4px;
+        font-size: 1rem;
+        cursor: pointer;
+        font-weight: 1000;
+    }
+    .input-box label {
+        font-size: 0.7rem;
+    }
+    .title {
+        font-size: 0.7rem;
+    }
+    .info-remind {
+        font-size: 0.7rem;
+    }
+    .type-content {
+        gap: .5rem;
+        display: grid;
+        text-align: center;
+        align-items: center;
+        margin-top: 1rem;
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+      width: 90%;
+      margin: 5% auto;
+    }
+}

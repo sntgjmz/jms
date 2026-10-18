@@ -1,0 +1,147 @@
+.welcome-doctor{
+    text-align: center;
+    padding: 10px;
+}
+.home-section .grid-db{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .home-section .grid-db article{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 200px;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      padding: 20px;
+      background: #fff;
+      border: 3px solid white;
+      border-radius: 5px;
+      cursor: pointer;
+      box-sizing: border-box;
+      transition: all 0.5 smooth ease;
+  }
+  .home-section .grid-db .widget1:hover{
+      transition: all 0.5 smooth ease;
+      color: #fff;
+      background: #3F1179;
+      border: solid #3F1179;
+  }
+  .home-section .grid-db .widget2:hover{
+      transition: all 0.5 smooth ease;
+      color: #fff;
+      background: rgb(95, 27, 184);
+      border: solid rgb(95, 27, 184);
+  }
+  .home-section .grid-db .widget3:hover{
+      transition: all 0.5 smooth ease;
+      color: #fff;
+      background: rgb(71, 77, 183);
+      border: solid rgb(71, 77, 183);
+  }
+  .home-section .grid-db .widget4:hover{
+      transition: all 0.5 smooth ease;
+      color: #fff;
+      background: #3AA5D5;
+      border: solid #3AA5D5;
+  }
+  .home-section .grid-db .widget5:hover{
+    transition: all 0.5 smooth ease;
+    color: #fff;
+    background: #6dafce;
+    border: solid #6dafce;
+  }
+  .home-section .grid-db article .num{
+      font-size: 22px;
+      font-weight: bolder;
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+  .home-section .grid-db article .art-text{
+      font-size: 14px;
+      font-weight: bolder;
+  }
+  .home-section .home-grid{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      grid-gap: 5px;
+      margin-top: 20px;
+  }
+  .home-section .home-grid .appointment-list,
+  .home-section .home-grid .appointment-history{
+      padding-bottom: 10px;
+      margin-left: 5px;
+      margin-right: 5px;
+      background: #fff;
+      border-radius: 10px;
+      height: auto;
+  }
+  .home-section .home-grid .appointment-list .apl-txt,
+  .home-section .home-grid .appointment-history .ah-txt{
+      font-weight: bolder;
+      padding: 12px;
+      padding-left: 2%;
+      position: absolute;
+      border-radius: 10px;
+      width: calc(96%-10px);
+  }
+  .home-section .home-grid .appointment-list .apl-container,
+  .home-section .home-grid .appointment-history .ah-container{
+      display: flex;
+      max-height: 65vh;
+      overflow-x: auto;
+      margin-top: 50px;
+  }
+  .home-section .home-grid .appointment-list table,
+  .home-section .home-grid .appointment-history table{
+      margin-left: 2%;
+      justify-content: center;
+      border-collapse: collapse;
+      width: 96%;
+      margin-bottom: 10px;
+      text-wrap: nowrap;
+  }
+  .home-section .home-grid .appointment-list th,
+  .home-section .home-grid .appointment-history th{
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bolder;
+    color: #696868;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: left;
+    padding-left: 15px;
+  }
+  .home-section .home-grid .appointment-list td,
+  .home-section .home-grid .appointment-history td{
+    margin-left: 20px;
+    background-color: #ededed;
+    padding: 10px;
+  }
+    
+  .home-section .home-grid .appointment-list .title,
+  .home-section .home-grid .appointment-history .title{
+    font-weight: 600;
+    border-top: 3px solid #fff;
+    font-size: 14px;
+    padding-left: 2%;
+  }
+  .home-section .home-grid .appointment-list .subtitle{
+    font-size: 11px;
+    border-bottom: 3px solid #fff;
+    font-weight: 600;
+    color: #696868;
+    padding-left: 2%;
+  }
+  .home-section .home-grid .appointment-list .image1{
+    text-align: center;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    border-left: 3px solid #fff;
+  }
+.home-section .home-grid .appointment-list img{
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 40px;
+}

@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="../">
+<meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="resources/vendor/fonts/fonts.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <title>Service Archives</title>
+    <link rel="icon" href="resources/images/icon1.png" type="image"/>
+
+    <link rel = "stylesheet" href="resources/css/style-admin/navbar.css" type="text/css">
+    <link rel = "stylesheet" href="resources/css/style-admin/archives-home-content.css" type="text/css">
+    <link rel = "stylesheet" href="resources/css/style-admin/dashboard.css" type="text/css">
+    <link rel = "stylesheet" href="resources/css/style-admin/secondarchives.css" type="text/css">
+    
+    <link rel="stylesheet" href="resources/vendor/boxicons/css/boxicons.min.css">
+<link rel="stylesheet" href="demo/demo.css">
+</head>
+<body data-demo-page="main-admin-service-archives" data-demo-role="admin"> 
+
+    
+    <div class="navbar">
+        <div class="logo-details">
+            <a href="#/main-admin" data-demo-route="main-admin">
+                <img class = "Logo" src="resources/images/icon1.png" alt="BPBPMC Logo" width="50px">
+                <div class="logo_name">BPBMC</div>
+            </a>
+        </div>
+        <section class = date-time>
+            <div class="display-date">
+                <span id="day">day</span>,
+                <span id="daynum">00</span>
+                <span id="month">month</span>
+                <span id="year">0000</span>
+            </div>
+            <div class="display-time"></div>
+        </section>
+    </div>
+<section class = home-section>
+    <div class="home-content">
+        <span class="text">Service Archives</span>
+    </div>
+    <div class="nav" style="margin: 30px;"><a href="#/main-admin-settings" style="text-decoration: none; color: black;" data-demo-route="main-admin-settings">< Back to Settings</a></div>
+    <div class="add-account-container">
+        <input class="search-account" type="text" id="search-input" placeholder="Search Service">
+    </div>
+    <div class="table-box">
+        
+            <div class="table-row table-head">
+                <div class="table-cell first-cell">
+                    <p>Service ID</p>
+                </div>
+                <div class="table-cell second-cell">
+                    <p>Service Name</p>
+                </div>
+                <div class="table-cell third-cell">
+                    <p>Category</p>
+                </div>
+                <div class="table-cell fourth-cell">
+                    <p>Price</p>
+                </div>
+                <div class="table-cell fifth-cell">
+                    <p>Status</p>
+                </div>
+                <div class="table-cell six-cell">
+                    <p></p>
+                </div>
+            </div>
+    </div>
+    <div class="table-container">
+    
+    <div class="table">
+        
+            <div class="table-row">
+                <div class="table-cell first-cell"><p>__DEMO_service_id__</p></div>
+                <div class="table-cell second-cell"><p>__DEMO_service_name__</p></div>
+                <div class="table-cell third-cell"><p>__DEMO_service_category__</p></div>
+                <div class="table-cell fourth-cell"><p>__DEMO_service_price__</p></div>
+                <div class="table-cell fifth-cell"><span style="font-weight: bold;"><p>__DEMO_isArchived__</p></span></div>
+                <div class="table-cell six-cell">
+                    <button class="archive-button" data-service-id="__DEMO_service_id__"><i class="fa-solid fa-trash-can-arrow-up"></i></button>
+                </div>
+            </div>
+        
+    </div>
+    <style>
+        .table-container {
+            height: 480px;
+            overflow: auto;
+        }
+    </style>
+    </div>
+    <input type="hidden" name="user-id-log" value="__DEMO_user_id__">
+    </section>
+    
+    
+
+    
+<script src="resources/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="resources/library/swiper/swiper-bundle.min.js"></script>
+<script type="module" src="demo/runtime.js"></script>
+</body>
+</html>

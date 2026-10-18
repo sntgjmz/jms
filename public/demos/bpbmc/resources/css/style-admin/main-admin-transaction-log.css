@@ -1,0 +1,283 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.table-container {
+    max-height: 455px;
+    overflow: auto;
+}
+
+.table-box {
+    margin: 0rem auto;
+}
+
+.table-row {
+    border-radius: 4px;
+    display: table;
+    width: 95%;
+    margin: 10px auto;
+    font-family: 'Poppins', sans-serif;
+    background: white;
+    padding: 12px 0;
+    color: #3d3d3d;
+    font-size: 1rem;
+    box-shadow: 0 1px 4px 0 rgba(0,0,50,0.3);
+}
+
+.table-cell {
+    border-radius: 4px;
+    display: table-cell;
+    width: 20%;
+    text-align: center;
+    padding: 4px 10px;
+    border-right: 1px solid #33333354;
+    vertical-align: middle;
+    font-size: 0.9rem;
+}
+
+.table-head {
+    background-color:#4f10a233;
+    background-color:#5010a2;
+    box-shadow: none;
+    color: white;
+    font-weight: 1000;
+    font-size: 1rem;
+}
+
+.table-head .table-cell {
+    border-right: none;
+}
+
+
+.add-billing-container {
+    text-align: left;
+    margin: 2rem auto 0px auto;
+    max-width: 90%;
+}
+
+.indicator {
+    color: #3d3d3d;
+    margin: 1rem 3rem;
+    box-shadow: none;
+    text-align: left;
+    font-weight: 1000;
+    border: none;
+    background-color: none;
+    background: none;
+    padding: 0 0;
+    cursor: default;
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow-x: auto;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 40%;
+}
+
+.closee {
+    color: #5010a2;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+  
+.closee:hover {
+    color: #3F1179;
+}
+
+
+.title-modal {
+    font-weight: 500;
+  }
+  
+.title-modal:after {
+    content: ":";
+}
+
+.modal-title {
+    color: #5010a2;
+    margin-bottom: 1rem;
+}
+.search-container {
+    text-align: left;
+    margin: 1rem auto 0px auto;
+    max-width: 95%;
+}
+
+#search-input {
+    margin-right: .9rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    height: 55px;
+    font-size: 1rem;
+    color: black;
+    outline: none;
+    border: 1px solid #9e9e9e;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.button-container {
+    margin: 2% 0 0 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px; 
+}
+  
+button{
+    padding: 10px 10px;
+    color: #fff;
+    background: #7251d3;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 1000;
+    width: 100%;
+}
+
+.six-cell, .last-cell {
+    max-width: 10%;
+}
+
+.last-cell {
+    border-right: none;
+}
+
+.settings-accordion {
+    position: relative;
+    width: 99%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #ccc;
+}
+  
+.accordion {
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border-bottom: 3px solid #ededed;
+    font-size: 16px;
+}
+  
+.accordion i {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+    
+.active, .accordion:hover {
+    background-color: #3F1179;
+    color: #fff;
+    font-weight: 1000;
+}
+    
+.panel {
+    width: 100%;
+    padding: 1rem;
+    padding-bottom: 2vh;
+    background-color: #fff;
+    display: none;
+    overflow: hidden;
+    border-bottom: 1px solid #fff;
+}
+.type-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.fourth-cell {
+    display: none;
+}
+.input-box {
+    width: 100%;
+    margin-top: 9px;
+}
+
+.input-box input {
+    position: relative;
+    height: 45px;
+    width: 100%;
+    font-size: 0.9rem;
+    color: black;
+    outline: none;
+    border: 1px solid #9e9e9e;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.input-box, label {
+    text-align: left;
+    font-weight: 1000;
+    color: #3F1179;
+}
+
+.type-content, input {
+    width: 100%;
+}
+
+.two-content {
+    gap: 1rem;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    margin-top: .7rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+h2 {
+    color: #3F1179;
+}
+
+@media screen and (max-width: 1330px) { 
+    .indicator {
+        margin: 1rem 2rem;
+    }
+    .modal-content {
+        width: 90%;
+        margin: 13% auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    .indicator {
+        margin: 1rem 1.3rem;
+    }
+    .second-cell {
+        border-right: none;
+    }
+    .third-cell, .last-cell {
+        display: none;
+    }
+    .type-content {
+        grid-template-columns: 1fr;
+    }
+}

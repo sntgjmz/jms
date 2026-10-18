@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="../">
+<meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="resources/vendor/fonts/fonts.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="resources/vendor/bootstrap/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="resources/images/icon1.png">
+    <link rel="stylesheet" href="resources/css/register.css">
+<link rel="stylesheet" href="demo/demo.css">
+</head>
+<body data-demo-page="register" data-demo-role="public">
+
+
+        <section class="main">
+            <div class="login-container">
+                <div class="tophead">
+                <img class="patientportal-left-section-image-second" src="resources/images/icon1.png" alt="logo">
+                <header>Create an Account</header>
+                </div>
+                <p class="already-have-account">
+                    Already have an account?
+                    <a href="#/patient" class="sign-in-link" data-demo-route="patient">Sign in</a>
+                </p>
+                <form class="form" action="#" data-demo-action="">
+                    <h2>Basic Information</h2>
+                    <div class="column">
+                        <div class="input-box">
+                            <label>Last Name <span style="color:red;">*</span></label>
+                            <input type="text" name="last_name" placeholder="Enter your last name" required />
+                        </div>
+                        <div class="input-box">
+                            <label>First Name <span style="color:red;">*</span></label>
+                            <input type="text" name="first_name" placeholder="Enter your first name" required />
+                        </div>
+                        <div class="input-box">
+                            <label>Middle Name <span style="color:red;">*</span></label>
+                            <input type="text" name="middle_name" placeholder="Enter your middle name" required />
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="input-box">
+                            <label>Suffix</label>
+                            <input type="text" name="suffix" placeholder="" />
+                        </div>
+                        <div class="input-box">
+                            <label>Birthdate <span style="color:red;">*</span></label>
+                            <input type="date" id="birthdate" name="birthdate" placeholder="birthdate" required />
+                        </div>
+                        <div class="input-box">
+                            <label>Sex <span style="color:red;">*</span></label>
+                            <div class="toggle-switch">
+                                <input type="radio" id="male" name="gender" value="male" required>
+                                <label for="male">Male</label>
+                                <input type="radio" id="female" name="gender" value="female" required>
+                                <label for="female">Female</label>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>Present Address</h2>
+                    <div class="column">
+                        <div class="input-box">
+                            <label>Country <span style="color:red;">*</span></label>
+                            <select name="country" required>
+                                <option value="Philippines">Philippines</option>
+                            </select>
+                        </div>
+                        <div class="input-box">
+                            <label>House No. & Street <span style="color:red;">*</span></label>
+                            <input type="text" name="house_street" placeholder="ex. Blk 36 Saudi Street" required />
+                        </div>
+                        <div class="input-box">
+                            <label>Barangay <span style="color:red;">*</span></label>
+                            <input type="text" name="barangay" placeholder="ex. Sta.Ana" required />
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="input-box">
+                            <label>Municipality/City <span style="color:red;">*</span></label>
+                            <input type="text" name="municipality_city" placeholder="ex. Taytay" required />
+                        </div>
+                        <div class="input-box">
+                            <label>Region <span style="color:red;">*</span></label>
+                            <input type="text" name="region" placeholder="ex. IV-A" required />
+                        </div>
+                        <div class="input-box">
+                            <label>Postal Code <span style="color:red;">*</span></label>
+                            <input type="text" name="postal_code" id="postal_code" placeholder="ex. 1920" maxlength="4" required/>
+                        </div>
+                    </div>
+
+                    <h2>Patient Account</h2>
+                    <span class="info-remind">* Kindly double check your email and contact number. Your email will serve as your login account for BPBMC. Please ensure that the email is accessible, and your contact number will be used for important notifications.
+                    </span></span>
+                    <div class="column">
+                        <div class="input-box">
+                            <label>Email <span style="color:red;">*</span></label>
+                            <input type="email" name="email" placeholder="Enter email" required />
+                            
+                                <p class="error-message" style="color: red; font-size: 12px;">__DEMO_email_error__</p>
+                            
+                        </div>
+                        <div class="input-box">
+                            <label>Password <span style="color:red;">*</span></label>
+                            <input type="password" name="password" placeholder="Enter password" minlength="8" required />
+                        </div>
+                        <div class="input-box">
+                            <label>Contact Number <span style="color:red;">*</span></label>
+                            <input type="tel" name="contactNumber" maxlength="11" required />
+                        </div>
+                    </div>
+
+                    <h2>Are you a new patient or an existing patient? <span style="color:red;">*</span></h2>
+                    <div class="column">
+                        <div class="input-box">
+                            <div class="toggle-switch">
+                                <input type="radio" id="existing" name="patient-type" value="existing" required>
+                                <label for="existing">Existing Patient</label>
+                                <input type="radio" id="new" name="patient-type" value="new" required>
+                                <label for="new">New Patient</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>ID Information</h2>
+                    <span class="info-remind">* Kindly submit an ID with your name and date of birth. Please ensure that account details and ID matches the information submitted.</span>
+                    <div class="column">
+                        <div class="input-box">
+                            <label>ID Type <span style="color:red;">*</span></label>
+                            <select name="idtype" required>
+                                <option value="votersid">Voter's ID</option>
+                                <option value="passport">Passport</option>
+                                <option value="driverslicense">Driver's License</option>
+                                <option value="postalid">Postal ID</option>
+                                <option value="sssgsis">SSS/GSIS</option>
+                                <option value="tin">Tax Identification Number (TIN) Card</option>
+                                <option value="seniorpwd">Senior/PWD ID</option>
+                                <option value="prc">PRC</option>
+                                <option value="nbi">NBI</option>
+                                <option value="schoolid">School ID</option>
+                                <option value="birthcertificate">Birth Certificate</option>
+                                <option value="bpbmcemployeeid">BPBMC Employee ID</option>
+                            </select>
+                        </div>
+                        <div class="input-box">
+                            <label>ID Number <span style="color:red;">*</span></label>
+                            <input type="text" name="id_number" required/>
+                            
+                                <p class="error-message" style="color: red; font-size: 12px;">__DEMO_id_number_error__</p>
+                            
+                        </div>
+                        <div class="input-box">
+                            <label class="hide-this">Upload an ID</label>
+                                <div class="custom-upload-box">
+                                <input type="file" name="id_image" id="idUpload" class="upload-box" accept="image/png, image/jpeg, image/gif"/>
+                            <div class="file-label">
+                                <label for="idUpload" id="selected-file-name">
+                                    <p>Upload an ID</p>
+                                    <span class="overlay-text">---------------------------------------------------</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div id="idError" style="display: none; color: red;">Please upload an ID image</div>
+                    </div>
+                    </div>
+                    <div class="patientportal-form-control">
+                        <button class="patientportal-signup-button">Sign-up</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+        
+    <script src="resources/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="resources/library/swiper/swiper-bundle.min.js"></script>
+<script type="module" src="demo/runtime.js"></script>
+</body>
+</html>

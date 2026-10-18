@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="../">
+<meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="resources/vendor/fonts/fonts.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <title>Billing Process</title>
+    <link rel="icon" href="resources/images/icon1.png" type="image"/>
+    <link rel = "stylesheet" href="resources/css/style-admin/navbar.css" type="text/css">
+    <link rel = "stylesheet" href="resources/css/style-admin/sidebar.css" type="text/css">
+    <link rel = "stylesheet" href="resources/css/style-admin/home_content.css" type="text/css">
+    <link rel = "stylesheet" href="resources/css/style-admin/dashboard.css" type="text/css">
+    <link rel = "stylesheet" href="resources/css/style-admin/module_admin_outpatient_billing.css" type="text/css">
+    <link rel="stylesheet" href="resources/vendor/boxicons/css/boxicons.min.css">
+<link rel="stylesheet" href="demo/demo.css">
+</head>
+<body data-demo-page="main-staff-outpatient-billing" data-demo-role="staff"> 
+
+    <div class="sidebar close">
+        <ul class = "nav-list">
+            <li>
+                <a href="#/main-staff" data-demo-route="main-staff">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <ul class = "submenu blank">
+                    <li><a class = "links_name">Dashboard</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a>
+                        <i class='bx bx-id-card'></i>
+                        <span class="links_name">Patient Record</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="submenu">
+                    <li class="links_name">Patient Record</a></li>
+                    <li><a href="#/main-staff-add-patient" data-demo-route="main-staff-add-patient">Add Patient Record</a></li>
+                    <li><a href="#/main-staff-list-of-patients" data-demo-route="main-staff-list-of-patients">List of Patients</a></li>
+                    <li><a herf="main-staff-medical-record.php">Medical Records</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a>
+                        <i class='bx bx-calendar-event'></i>
+                        <span class="links_name">Appointment</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="submenu">
+                    <li class= "links_name">Appointment</a></li>
+                    <li><a href="#/main-staff-add-appointment" data-demo-route="main-staff-add-appointment">Add Appointment</a></li>
+                    <li><a href="#/main-staff-calendar-of-appointment" data-demo-route="main-staff-calendar-of-appointment">Appointment List</a></li>
+                    <li><a href="#/main-staff-approval-of-appointment" data-demo-route="main-staff-approval-of-appointment">Approval of Appointment</a></li>
+                    <li><a href="#/main-staff-appointment-history" data-demo-route="main-staff-appointment-history">Appointment History</a></li>
+                </ul>
+            </li>
+            <li class="blk">
+                <div class="dropdown">
+                    <a>
+                        <i class='bx bx-clinic'></i>
+                        <span class="links_name">Outpatient</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="submenu">
+                    <li class ="links_name">Outpatient</a></li>
+                    <li><a href="#/main-staff-outpatient-billing" data-demo-route="main-staff-outpatient-billing">Billing Process</a></li>
+                    <li><a href="#/main-staff-medical-result" data-demo-route="main-staff-medical-result">Medical Results</a></li>
+                    <li><a href="#/main-staff-patient-monitoring" data-demo-route="main-staff-patient-monitoring">Patient Monitoring</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#/main-staff-activity-log" data-demo-route="main-staff-activity-log">
+                    <i class='bx bx-history'></i>
+                    <span class="links_name">Activity Log</span>
+                </a>
+                <ul class = "submenu blank">
+                    <li><a class = "links_name">Activity Log</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#/main-staff-transactionlog" data-demo-route="main-staff-transactionlog">
+                    <i class='bx bx-book-content'></i>
+                    <span class="links_name">Transaction Log</span>
+                </a>
+                <ul class = "submenu blank">
+                    <li><a class = "links_name">Transaction Log</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#/main-staff-settings" data-demo-route="main-staff-settings">
+                    <i class='bx bx-cog'></i>
+                    <span class="links_name">Settings</span>
+                </a>
+                <ul class = "submenu blank">
+                    <li><a class = "links_name">Settings</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#/clinic" data-demo-route="clinic">
+                    <i class='bx bx-log-out-circle'></i>
+                    <span class="links_name">Logout</span>
+                </a>
+                <ul class="submenu blank">
+                    <li><a class="links_name">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="navbar">
+        <div class="logo-details">
+            <i class='bx bx-menu' ></i>
+            <a href="#/main-staff" data-demo-route="main-staff">
+                <img class = "Logo" src ="resources/images/icon1.png" alt="BPBPMC Logo" width="50px">
+                <div class="logo_name">BPBMC</div>
+            </a>
+        </div>
+        <section class = date-time>
+            <div class="display-date">
+                <span id="day">day</span>,
+                <span id="daynum">00</span>
+                <span id="month">month</span>
+                <span id="year">0000</span>
+            </div>
+            <div class="display-time"></div>
+        </section>
+    </div>
+    <section class="home-section">
+        <div class="home-content">
+            
+        </div>
+        
+
+<section class="main">        
+<form action="#" data-demo-action="staff-process_billing.php">
+    <h2 class="title">Billing Process</h2>
+    <p id="patient-error" class="error-message">
+        
+    <div class="type-content">
+    <div class="input-box">
+    <label>Recent</label>
+    <select name="category-t" id="category-t">
+        <option value="none" selected disabled hidden>Choose Patient</option>
+        
+    </select>
+    </div>
+
+    <div class="input-box">
+        <label>Patient Name</label>
+        <select name="category-t" id="category-p">
+            <option value="none" selected disabled hidden>Choose Patient</option>
+            
+        </select>
+    </div>
+    </div>
+
+    <input type="hidden" name="email" id="selected-email" value="">
+
+        <table id="billing-table">
+            <thead>
+                <tr>
+                    <th class="first-cell">Service Name</th>
+                    <th class="second-cell">T</th>
+                    <th class="third-cell">D</th>
+                    <th class="fourth-cell">Price</th>
+                    <th class="fifth-cell" >Discount (%)</th>
+                    <th class="six-cell">Subtotal</th>
+                    <th class="last-cell">Action</th>
+                </tr>
+            </thead>
+        <tbody>
+           
+        </tbody>
+    </table>
+    <p id="item-error" class="error-message"></p>
+
+    <button type="button" id="add-item">&plus;</button>
+    <h3 class="total-amount">Total Amount: ₱ <span id="total-amount">0.00</span></h3>
+
+    <div class="add-billing-container">
+        <input type="submit" class="add-billing-button" value="Add Billing">
+    </div>
+</form>
+</section>
+
+<div id="treatmentModal" class="modal">
+    <div class="modal-content">
+        <h2 class="modalh2">Select Treatment</h2>
+        <select class="modalselect" id="treatmentSelect">
+            <option value="none" selected disabled hidden>Choose Treatment</option>
+                
+        </select>
+
+        <div class="button-modal-container">
+            <button class="canceldesign" type="button" id="closeTreatmentModal">Cancel</button>
+            <button type="button" id="addTreatment">Add</button>
+        </div>
+    </div>
+</div>
+
+<div id="diagnosticsModal" class="modal">
+    <div class="modal-content">
+        <h2 class="modalh2">Select Diagnostics</h2>
+        <select class="modalselect" id="diagnosticsSelect">
+            <option value="none" selected disabled hidden>Choose Service</option>
+                
+        </select>
+        <div class="button-modal-container">
+            <button class="canceldesign" type="button" id="closeDiagnosticsModal">Cancel</button>
+            <button type="button" id="addDiagnostics">Add</button>
+            <input type="hidden" name="user-id-log" value="__DEMO_user_id__"> 
+        </div>
+    </div>
+</div>
+    <footer>
+        <span>Blessed Paul Bernard Medical Clinic |</span>
+        <span>© All Rights Reserved 2023</span>
+    </footer>
+    </section>
+    
+    
+    
+    
+    
+    
+<script src="resources/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="resources/library/swiper/swiper-bundle.min.js"></script>
+<script type="module" src="demo/runtime.js"></script>
+</body>
+</html>

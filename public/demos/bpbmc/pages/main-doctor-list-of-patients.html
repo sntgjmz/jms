@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="../">
+<meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="resources/vendor/fonts/fonts.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <title>List of Patients</title>
+    <link rel="icon" href="resources/images/icon1.png" type="image"/>
+
+    <link rel = "stylesheet" href="resources/css/style-doctor/navbar-doctor.css" type="text/css">
+    <link rel = "stylesheet" href="resources/css/style-doctor/sidebar-doctor.css" type="text/css">
+    <link rel = "stylesheet" href="resources/css/style-doctor/home_content-doctor.css" type="text/css">
+    <link rel = "stylesheet" href="resources/css/style-doctor/doctor-medical-list-of-patients.css" type="text/css">
+    
+    <link rel="stylesheet" href="resources/vendor/boxicons/css/boxicons.min.css">
+<link rel="stylesheet" href="demo/demo.css">
+</head>
+<body data-demo-page="main-doctor-list-of-patients" data-demo-role="doctor"> 
+
+    <div class="sidebar close">
+        <ul class = "nav-list">
+            <li>
+                <a href="#/main-doctor" data-demo-route="main-doctor">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <ul class = "submenu blank">
+                    <li><a class = "links_name">Dashboard</a></li>
+                </ul>
+            </li>
+            <li class="blk">
+                <div class="dropdown">
+                    <a>
+                        <i class='bx bx-id-card'></i>
+                        <span class="links_name">Patient Record</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="submenu">
+                    <li class="links_name">Patient Record</a></li>
+                    <li><a href="#/main-doctor-list-of-patients" data-demo-route="main-doctor-list-of-patients">List of Patients</a></li>
+                    <li><a href="#/main-doctor-medical-record" data-demo-route="main-doctor-medical-record">Medical Record</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a>
+                        <i class='bx bx-calendar-event'></i>
+                        <span class="links_name">Appointment</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="submenu">
+                    <li class= "links_name">Appointment</a></li>
+                    <li><a href="#/main-doctor-add-appointment" data-demo-route="main-doctor-add-appointment">Add Appointment</a></li>
+                    <li><a href="#/main-doctor-appointment-list" data-demo-route="main-doctor-appointment-list">Appointment List</a></li>
+                    <li><a href="#/main-doctor-appointment-history" data-demo-route="main-doctor-appointment-history">Appointment History</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#/main-doctor-settings" data-demo-route="main-doctor-settings">
+                    <i class='bx bx-cog'></i>
+                    <span class="links_name">Settings</span>
+                </a>
+                <ul class = "submenu blank">
+                    <li><a class = "links_name">Settings</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#/clinic" data-demo-route="clinic">
+                    <i class='bx bx-log-out-circle'></i>
+                    <span class="links_name">Logout</span>
+                </a>
+                <ul class="submenu blank">
+                    <li><a class="links_name">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="navbar">
+        <div class="logo-details">
+            <i class='bx bx-menu' ></i>
+            <a href="#/main-doctor" data-demo-route="main-doctor">
+                <img class = "Logo" src="resources/images/icon1.png" alt="BPBPMC Logo" width="50px">
+                <div class="logo_name">BPBMC</div>
+            </a>
+        </div>
+        <section class = date-time>
+            <div class="display-date">
+                <span id="day">day</span>,
+                <span id="daynum">00</span>
+                <span id="month">month</span>
+                <span id="year">0000</span>
+            </div>
+            <div class="display-time"></div>
+        </section>
+     
+    </div>
+    <section class="home-section">
+
+    <div class="home-content">
+        <span class="text">List of Patients</span>
+    </div>
+
+    <div class="search-patient-container">
+        <input class="search-patient" type="text" id="search-input" placeholder="Search Patients">
+    </div>
+    
+    <div class="table-box">
+        
+            <div class="table-row table-head">
+                <div class="table-cell first-cell">
+                    <p>Patient Name</p>
+                </div>
+            </div>
+        </div>
+        <div class="table-container">
+            
+            <div class="table" id="patientTable">
+                
+                    <div class="table-row"
+                    data-patient-name="__DEMO_patient_name__"
+                    data-email="__DEMO_email__"
+                    data-contact_number="__DEMO_contact_number__"
+                    >
+                        <div class="table-cell first-cell"><p>__DEMO_patient_name__</p></div>
+                    </div>
+                
+            </div>
+        </div>
+
+        <div id="medicalresult_modal" class="modal">
+            <div class="modal-content">
+      
+            </div>
+        </div>
+
+        <div id="myModal" class="modale">
+            <div class="modal-contente">
+            <span class="close">&times;</span>
+            <p id="modalContent"></p>
+        </div>
+
+    </div>
+
+<footer>
+    <span>Blessed Paul Bernard Medical Clinic |</span>
+    <span>© All Rights Reserved 2023</span>
+</footer>
+
+
+
+
+
+<script src="resources/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="resources/library/swiper/swiper-bundle.min.js"></script>
+<script type="module" src="demo/runtime.js"></script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<base href="../">
+<meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="resources/vendor/fonts/fonts.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         
+        <title>Appointment List</title>
+        <link rel="icon" href="resources/images/icon1.png" type="image"/>
+
+        <link rel = "stylesheet" href="resources/css/style-doctor/navbar-doctor.css" type="text/css">
+        <link rel = "stylesheet" href="resources/css/style-doctor/sidebar-doctor.css" type="text/css">
+        <link rel = "stylesheet" href="resources/css/style-doctor/home_content-doctor.css" type="text/css">
+        <link rel = "stylesheet" href="resources/css/style-doctor/doctor-appointment-list.css" type="text/css">
+
+
+        <link rel="stylesheet" href="resources/vendor/boxicons/css/boxicons.min.css">
+        <link rel="stylesheet" href="resources/vendor/boxicons/css/boxicons.min.css">
+<link rel="stylesheet" href="demo/demo.css">
+</head>
+<body data-demo-page="main-doctor-appointment-list" data-demo-role="doctor">
+
+ <div class="sidebar close">
+        <ul class = "nav-list">
+            <li>
+                <a href="#/main-doctor" data-demo-route="main-doctor">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <ul class = "submenu blank">
+                    <li><a class = "links_name">Dashboard</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a>
+                        <i class='bx bx-id-card'></i>
+                        <span class="links_name">Patient Record</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="submenu">
+                    <li class="links_name">Patient Record</a></li>
+                    <li><a href="#/main-doctor-list-of-patients" data-demo-route="main-doctor-list-of-patients">List of Patients</a></li>
+                    <li><a href="#/main-doctor-medical-record" data-demo-route="main-doctor-medical-record">Medical Record</a></li>
+                </ul>
+            </li>
+            <li class="blk">
+                <div class="dropdown">
+                    <a>
+                        <i class='bx bx-calendar-event'></i>
+                        <span class="links_name">Appointment</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="submenu">
+                    <li class= "links_name">Appointment</a></li>
+                    <li><a href="#/main-doctor-add-appointment" data-demo-route="main-doctor-add-appointment">Add Appointment</a></li>
+                    <li><a href="#/main-doctor-appointment-list" data-demo-route="main-doctor-appointment-list">Appointment List</a></li>
+                    <li><a href="#/main-doctor-appointment-history" data-demo-route="main-doctor-appointment-history">Appointment History</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#/main-doctor-settings" data-demo-route="main-doctor-settings">
+                    <i class='bx bx-cog'></i>
+                    <span class="links_name">Settings</span>
+                </a>
+                <ul class = "submenu blank">
+                    <li><a class = "links_name">Settings</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#/clinic" data-demo-route="clinic">
+                    <i class='bx bx-log-out-circle'></i>
+                    <span class="links_name">Logout</span>
+                </a>
+                <ul class="submenu blank">
+                    <li><a class="links_name">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+        <div class="navbar">
+            <div class="logo-details">
+                <i class='bx bx-menu' ></i>
+                <a href="#/main-doctor" data-demo-route="main-doctor">
+                    <img class = "Logo" src ="resources/images/icon1.png" alt="BPBPMC Logo" width="50px">
+                    <div class="logo_name">BPBMC</div>
+                </a>
+            </div>
+            <section class = date-time>
+                <div class="display-date">
+                    <span id="day">day</span>,
+                    <span id="daynum">00</span>
+                    <span id="month">month</span>
+                    <span id="year">0000</span>
+                </div>
+                <div class="display-time"></div>
+            </section>
+           
+        </div>
+        <section class="home-section">
+            <div class="home-content">
+                <span class="text">Appointment List</span>
+            </div>
+
+
+        <div class="information-appointment">
+            <div class="add-account-container">
+                <input class="search-account" type="text" id="search-input" placeholder="Search Appointment">
+            </div>
+            
+            <div class="list-of-appointments">
+                <div class="table-box">
+                
+                    <div class="table-row table-head">
+                        <div class="table-cell first-cell">
+                            <p>ID</p>
+                        </div>
+                        <div class="table-cell second-cell">
+                            <p>Doctor Name</p>
+                        </div>
+                        <div class="table-cell third-cell">
+                            <p>Patient Name</p>
+                        </div>
+                        <div class="table-cell fourth-cell">
+                            <p>Appointment Time</p>
+                        </div>
+                        <div class="table-cell fifth-cell">
+                            <p>Appointment Date</p>
+                        </div>
+                        <div class="table-cell six-cell">
+                            <p>Clinic Branch</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <div class="table" id="appointmentTable">
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <form id="appointmentApprovalForm" action="#" data-demo-action="">
+                <h2 class="modal-title">Appointment Details</h2>
+                    <div id="modalContent">
+               
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+
+        <div id="addAppointmentModal" class="modal-a">
+            <div class="modal-content-a">
+            <span class="close" id="closePopup">&times;</span>
+                <form id="addAppointmentForm" action="#" data-demo-action="doctor_add_appointment.php">
+                <h2 class="modal-title">Add Appointment</h2>
+
+                    <div id="addAppointmentContent">
+                        <div class="form-group">
+                            <label for="patientname">Patient Name</label>
+                            <select name="patientname" id="patientSelect" required >
+                            
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="doctorname">Doctor Name</label>
+                            <select name="doctor_id" id="doctor_id">
+
+                            </select>
+                        </div>
+
+                        <div class="type-content">
+                        <div class="form-group">
+                            <label for="clinicbranch">Clinic Branch</label>
+                            <select name="clinicbranch" required>
+                            <option value="pasig">Pasig City</option>
+                            <option value="taytay">Taytay Rizal</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="patientType">Patient Type</label>
+                            <input type="text" id="patientType" name="patientType" readonly>
+                        </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Patient Email</label>
+                            <input type="text" id="email" name="email" readonly>
+                        </div>
+
+                        <div class="type-content">
+                        <div class="input-box">
+                            <label>Appointment Date</label>
+                            <input type="date" name="appointmentdate" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="time">Appointment Time</label>
+                            <select name="time" required>
+                            <option value="7:00AM - 8:00AM">7:00AM - 8:00AM</option>
+                            <option value="8:00AM - 9:00AM">8:00AM - 9:00AM</option>
+                            <option value="9:00AM - 10:00AM">9:00AM - 10:00AM</option>
+                            <option value="10:00AM - 11:00AM">10:00AM - 11:00AM</option>
+                            <option value="11:00AM - 12:00PM">11:00AM - 12:00PM</option>
+                            </select>
+                        </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-box">
+                            <label for="notes">Notes</label>
+                            <input type="text" id="notes" name="notes">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="status">Status</label>
+                            <input type="text" id="status" name="status" value="Approved" readonly>
+                        </div>
+
+
+                    </div>
+
+                    <button type="submit" class="addAppointment">Add Appointment</button>
+                </div>
+                </form>
+            </div>
+        </div>
+      
+        </section>
+        <footer>
+            <span>Blessed Paul Bernard Medical Clinic |</span>
+            <span>© All Rights Reserved 2023</span>
+        </footer>
+        
+    
+    
+    
+    
+    <script src="resources/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="resources/library/swiper/swiper-bundle.min.js"></script>
+<script type="module" src="demo/runtime.js"></script>
+</body>
+</html>

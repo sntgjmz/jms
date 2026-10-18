@@ -1,0 +1,93 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #e4e6eb;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    visibility: hidden;
+    transition: 0.4s all smooth ease;
+    scrollbar-width: 10px;
+    scrollbar-color: #8f54a0 #ffffff;
+    width: 10px;
+    scroll-behavior: smooth;
+    z-index: 1;
+}
+::-webkit-scrollbar-track {
+    background: lightgray;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+}
+.sidebar.close ~ .home-section{
+    left: 80px;
+    width: calc(100% - 80px);
+}
+.home-section{
+    position: relative;
+    height: calc(100% - 3rem);
+    left: 17rem;
+    width: calc(100% - 17rem);
+    transition: all 0.5s ease;
+}
+.home-section .home-content{
+    margin-top: 2.5rem;
+    padding-left: 1.5rem;
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    -webkit-box-shadow: -10px 50px 150px -50px rgba(0,0,0,0.5);
+    -moz-box-shadow: -10px 50px 150px -50px rgba(0,0,0,0.5);
+    box-shadow: -10px 50px 150px -50px rgba(0,0,0,0.5); 
+    margin-bottom: 20px;
+}
+.home-section .home-content .text{
+    position: fixed;
+    width: 100%;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: .5rem;
+    margin-left: -24px;
+    background: white;
+    font-size: 24px;
+    font-weight: bolder;
+}
+.home-section .home-content .text:hover{
+    color: linear-gradient(172deg, rgba(80, 16, 162, 0.90) 0%, rgba(71, 77, 183, 0.82) 50.52%, #3AA5D5 100%);
+}
+footer{
+    margin-top: 50px;
+    padding: 15px;
+    text-align: center;
+    font-size: 8px;
+    z-index: 99;
+}
+@media only screen and (max-width: 1024px){
+    .home-section{
+       width: 100%;
+       left: 0rem;
+    }
+    .sidebar.close ~ .home-section{
+        left: 0px;
+        width: calc(100%);
+    }
+}
+
+/* Portrait tables and large phones */
+@media only screen and (min-width: 600px){
+    
+}
+
+/* Extra small devices such phones */
+@media only screen and (max-width: 400px){
+    
+}

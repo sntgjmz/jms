@@ -1,0 +1,350 @@
+[
+  {
+    "route": "change-password",
+    "role": "public",
+    "title": "Reset Password",
+    "source": "change-password.php"
+  },
+  {
+    "route": "clinic",
+    "role": "public",
+    "title": "Clinic Portal",
+    "source": "clinic.php"
+  },
+  {
+    "route": "forgot-password",
+    "role": "public",
+    "title": "Forgot Password",
+    "source": "forgot-password.php"
+  },
+  {
+    "route": "index",
+    "role": "public",
+    "title": "Blessed Paul Bernard Medical Clinic",
+    "source": "index.php"
+  },
+  {
+    "route": "main-admin-activity-log",
+    "role": "admin",
+    "title": "Activity Log",
+    "source": "main-admin-activity-log.php"
+  },
+  {
+    "route": "main-admin-add-appointment",
+    "role": "admin",
+    "title": "Add Appointment",
+    "source": "main-admin-add-appointment.php"
+  },
+  {
+    "route": "main-admin-add-patient",
+    "role": "admin",
+    "title": "Add Patient",
+    "source": "main-admin-add-patient.php"
+  },
+  {
+    "route": "main-admin-appointment-history",
+    "role": "admin",
+    "title": "Appointment History",
+    "source": "main-admin-appointment-history.php"
+  },
+  {
+    "route": "main-admin-approval-of-appointment",
+    "role": "admin",
+    "title": "Approval of Appointment",
+    "source": "main-admin-approval-of-appointment.php"
+  },
+  {
+    "route": "main-admin-backup-restore",
+    "role": "admin",
+    "title": "Backup and Restore",
+    "source": "main-admin-backup-restore.php"
+  },
+  {
+    "route": "main-admin-calendar-of-appointment",
+    "role": "admin",
+    "title": "Appointment List",
+    "source": "main-admin-calendar-of-appointment.php"
+  },
+  {
+    "route": "main-admin-clinic-account-archives",
+    "role": "admin",
+    "title": "Clinic Account Archives",
+    "source": "main-admin-clinic-account-archives.php"
+  },
+  {
+    "route": "main-admin-diagnostic-service",
+    "role": "admin",
+    "title": "Diagnostic Services",
+    "source": "main-admin-diagnostic-service.php"
+  },
+  {
+    "route": "main-admin-list-of-accounts",
+    "role": "admin",
+    "title": "List of Accounts",
+    "source": "main-admin-list-of-accounts.php"
+  },
+  {
+    "route": "main-admin-list-of-patients",
+    "role": "admin",
+    "title": "List of Patients",
+    "source": "main-admin-list-of-patients.php"
+  },
+  {
+    "route": "main-admin-medical-record",
+    "role": "admin",
+    "title": "Medical Records",
+    "source": "main-admin-medical-record.php"
+  },
+  {
+    "route": "main-admin-medical-result",
+    "role": "admin",
+    "title": "Medical Results",
+    "source": "main-admin-medical-result.php"
+  },
+  {
+    "route": "main-admin-medical-treatment",
+    "role": "admin",
+    "title": "Medical Treatment",
+    "source": "main-admin-medical-treatment.php"
+  },
+  {
+    "route": "main-admin-outpatient-billing",
+    "role": "admin",
+    "title": "Billing Process",
+    "source": "main-admin-outpatient-billing.php"
+  },
+  {
+    "route": "main-admin-patient-account-archives",
+    "role": "admin",
+    "title": "Patient Account Archives",
+    "source": "main-admin-patient-account-archives.php"
+  },
+  {
+    "route": "main-admin-patient-monitoring",
+    "role": "admin",
+    "title": "Patient Monitoring",
+    "source": "main-admin-patient-monitoring.php"
+  },
+  {
+    "route": "main-admin-service-archives",
+    "role": "admin",
+    "title": "Service Archives",
+    "source": "main-admin-service-archives.php"
+  },
+  {
+    "route": "main-admin-settings",
+    "role": "admin",
+    "title": "Settings",
+    "source": "main-admin-settings.php"
+  },
+  {
+    "route": "main-admin-transaction-log",
+    "role": "admin",
+    "title": "Transaction Log",
+    "source": "main-admin-transaction-log.php"
+  },
+  {
+    "route": "main-admin-treatment-archives",
+    "role": "admin",
+    "title": "Treatment Archives",
+    "source": "main-admin-treatment-archives.php"
+  },
+  {
+    "route": "main-admin-verify-patient",
+    "role": "admin",
+    "title": "Verify Patient Account",
+    "source": "main-admin-verify-patient.php"
+  },
+  {
+    "route": "main-admin",
+    "role": "admin",
+    "title": "Admin Dashboard",
+    "source": "main-admin.php"
+  },
+  {
+    "route": "main-doctor-add-appointment",
+    "role": "doctor",
+    "title": "Add Appointment",
+    "source": "main-doctor-add-appointment.php"
+  },
+  {
+    "route": "main-doctor-appointment-history",
+    "role": "doctor",
+    "title": "Appointment History",
+    "source": "main-doctor-appointment-history.php"
+  },
+  {
+    "route": "main-doctor-appointment-list",
+    "role": "doctor",
+    "title": "Appointment List",
+    "source": "main-doctor-appointment-list.php"
+  },
+  {
+    "route": "main-doctor-list-of-patients",
+    "role": "doctor",
+    "title": "List of Patients",
+    "source": "main-doctor-list-of-patients.php"
+  },
+  {
+    "route": "main-doctor-medical-record",
+    "role": "doctor",
+    "title": "Medical Records",
+    "source": "main-doctor-medical-record.php"
+  },
+  {
+    "route": "main-doctor-settings",
+    "role": "doctor",
+    "title": "Settings",
+    "source": "main-doctor-settings.php"
+  },
+  {
+    "route": "main-doctor",
+    "role": "doctor",
+    "title": "Doctor Dashboard",
+    "source": "main-doctor.php"
+  },
+  {
+    "route": "main-patient-appointment-history",
+    "role": "patient",
+    "title": "Appointment History",
+    "source": "main-patient-appointment-history.php"
+  },
+  {
+    "route": "main-patient-appointment",
+    "role": "patient",
+    "title": "Appointment",
+    "source": "main-patient-appointment.php"
+  },
+  {
+    "route": "main-patient-medical-record",
+    "role": "patient",
+    "title": "Medical Records",
+    "source": "main-patient-medical-record.php"
+  },
+  {
+    "route": "main-patient-medical-result",
+    "role": "patient",
+    "title": "Medical Results",
+    "source": "main-patient-medical-result.php"
+  },
+  {
+    "route": "main-patient-payment-history",
+    "role": "patient",
+    "title": "Payment History",
+    "source": "main-patient-payment-history.php"
+  },
+  {
+    "route": "main-patient-settings",
+    "role": "patient",
+    "title": "Settings",
+    "source": "main-patient-settings.php"
+  },
+  {
+    "route": "main-patient",
+    "role": "patient",
+    "title": "Patient Dashboard",
+    "source": "main-patient.php"
+  },
+  {
+    "route": "main-staff-activity-log",
+    "role": "staff",
+    "title": "Activity Log",
+    "source": "main-staff-activity-log.php"
+  },
+  {
+    "route": "main-staff-add-appointment",
+    "role": "staff",
+    "title": "Add Appointment",
+    "source": "main-staff-add-appointment.php"
+  },
+  {
+    "route": "main-staff-add-patient",
+    "role": "staff",
+    "title": "Add Patient",
+    "source": "main-staff-add-patient.php"
+  },
+  {
+    "route": "main-staff-appointment-history",
+    "role": "staff",
+    "title": "Appointment History",
+    "source": "main-staff-appointment-history.php"
+  },
+  {
+    "route": "main-staff-approval-of-appointment",
+    "role": "staff",
+    "title": "Approval of Appointment",
+    "source": "main-staff-approval-of-appointment.php"
+  },
+  {
+    "route": "main-staff-calendar-of-appointment",
+    "role": "staff",
+    "title": "Appointment List",
+    "source": "main-staff-calendar-of-appointment.php"
+  },
+  {
+    "route": "main-staff-list-of-patients",
+    "role": "staff",
+    "title": "List of Patients",
+    "source": "main-staff-list-of-patients.php"
+  },
+  {
+    "route": "main-staff-medical-record",
+    "role": "staff",
+    "title": "Medical Records",
+    "source": "main-staff-medical-record.php"
+  },
+  {
+    "route": "main-staff-medical-result",
+    "role": "staff",
+    "title": "Medical Results",
+    "source": "main-staff-medical-result.php"
+  },
+  {
+    "route": "main-staff-outpatient-billing",
+    "role": "staff",
+    "title": "Billing Process",
+    "source": "main-staff-outpatient-billing.php"
+  },
+  {
+    "route": "main-staff-patient-monitoring",
+    "role": "staff",
+    "title": "Patient Monitoring",
+    "source": "main-staff-patient-monitoring.php"
+  },
+  {
+    "route": "main-staff-settings",
+    "role": "staff",
+    "title": "Settings",
+    "source": "main-staff-settings.php"
+  },
+  {
+    "route": "main-staff-transactionlog",
+    "role": "staff",
+    "title": "Transaction Log",
+    "source": "main-staff-transactionlog.php"
+  },
+  {
+    "route": "main-staff",
+    "role": "staff",
+    "title": "Staff Dashboard",
+    "source": "main-staff.php"
+  },
+  {
+    "route": "patient",
+    "role": "public",
+    "title": "Patient Portal",
+    "source": "patient.php"
+  },
+  {
+    "route": "register",
+    "role": "public",
+    "title": "Create an Account",
+    "source": "register.php"
+  },
+  {
+    "route": "registered",
+    "role": "public",
+    "title": "Successfully Registered",
+    "source": "registered.php"
+  }
+]
