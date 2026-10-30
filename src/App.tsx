@@ -410,8 +410,9 @@ function Contact() {
             <em>useful together.</em>
           </h2>
           <p>
-            Hiring a virtual assistant, looking for a web developer, or planning
-            a project? Email me directly with the role, task, or outcome you need.
+            Hiring a graphic designer or virtual assistant, looking for a web
+            developer, or planning a project? Email me directly with the role,
+            task, or outcome you need.
           </p>
           <a className="contact-email" href={directEmailHref}>
             {profile.email}
@@ -454,7 +455,7 @@ function Contact() {
                 <span>01</span>
                 <div>
                   <strong>What you need</strong>
-                  <p>Virtual assistance, web development, or both.</p>
+                  <p>Graphic design, virtual assistance, web development, or a mix.</p>
                 </div>
               </li>
               <li>
@@ -543,10 +544,11 @@ const services: {
   },
   {
     icon: "spark",
-    title: "Content & visual support",
+    title: "Graphic design & content support",
     description:
-      "Clear content plans and visual materials informed by a graphic design background.",
+      "Clear visual materials and content plans informed by a graphic design internship.",
     items: [
+      "Social-media graphics & simple marketing layouts",
       "Content planning support",
       "Draft captions & briefs",
       "Content graphics",
@@ -701,12 +703,12 @@ function App() {
           <div className="hero-copy">
             <span className="eyebrow">
               <span className="tiny-dot" />
-              WEB DEVELOPMENT · VIRTUAL ASSISTANCE
+              WEB DEVELOPMENT · GRAPHIC DESIGN · VIRTUAL ASSISTANCE
             </span>
             <h1 id="hero-title">
               Web builds &
               <br />
-              virtual support.
+              visual support.
               <br />
               <em>Done with care.</em>
               <svg
@@ -726,9 +728,9 @@ function App() {
             <p className="hero-intro">
               Hi, I’m <strong>{profile.name}.</strong>
               <br />I’m a cum laude BSIT graduate who combines responsive web
-              development with detail-focused virtual assistance across data
-              entry, records organization, research, customer support,
-              documentation, and organized admin work.
+              development, graphic design, and detail-focused virtual assistance
+              across data entry, records organization, research, customer
+              support, documentation, and organized admin work.
             </p>
             <div className="hero-actions">
               <a className="button button-green" href="#virtual-assistance">
@@ -786,14 +788,15 @@ function App() {
               <article className="audience-card">
                 <span className="audience-label">WEB DEVELOPMENT</span>
                 <div>
-                  <h2>Need a website or web application?</h2>
+                  <h2>Need a website or visual content?</h2>
                   <p>
-                    Explore responsive systems with web, mobile, and multi-role
-                    workflows.
+                    Explore responsive systems, graphic design support, and
+                    visual materials shaped for clear communication.
                   </p>
                 </div>
                 <nav aria-label="Web development links">
                   <a href="#development-work">Web projects</a>
+                  <a href="#services">Design support</a>
                   <a href="#background">Background</a>
                   <a href="#contact">Contact</a>
                 </nav>
@@ -1172,7 +1175,7 @@ function App() {
               <em>Curiosity into craft.</em>
             </h2>
             <p>
-              I’m a web developer and virtual assistant with a {profile.degree} from{" "}
+              I’m a web developer, graphic designer, and virtual assistant with a {profile.degree} from{" "}
               {profile.college}, where I graduated {profile.academicHonor.toLowerCase()} in{" "}
               {profile.graduationYear}. I build responsive websites and bring the
               same structured approach to data entry, research, customer
@@ -1193,7 +1196,7 @@ function App() {
               </span>
               <span>
                 <Icon name="check" />
-                Virtual assistance & data support
+                Graphic design, virtual assistance & data support
               </span>
               <span>
                 <Icon name="check" />

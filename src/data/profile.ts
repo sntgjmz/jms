@@ -3,7 +3,7 @@ export const profile = {
   name: "Jose Miguel Santiago",
   email: "Josemiguelsantiagopersonal@gmail.com",
   linkedinUrl: "https://www.linkedin.com/in/sntgjm/",
-  role: "Web Developer & Virtual Assistant",
+  role: "Web Developer, Graphic Designer & Virtual Assistant",
   degree: "Bachelor of Science in Information Technology",
   college: "STI College Ortigas-Cainta",
   graduationYear: 2024,
@@ -19,6 +19,7 @@ export const profile = {
     "Inbox, calendar & file organization",
     "Customer support workflows",
     "Content planning support",
+    "Graphic design & visual content support",
     "Attention to detail",
   ],
   // Add public/resume.pdf, then change this to '/resume.pdf' to show the link.
