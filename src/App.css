@@ -672,12 +672,13 @@ h2 {
 }
 
 #virtual-assistance,
+#graphic-design-work,
 #development-work {
   scroll-margin-top: 105px;
 }
 .work-track-nav {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
   margin-bottom: 42px;
 }
@@ -2077,6 +2078,9 @@ h2 {
   }
   .section-space {
     padding-block: 75px;
+  }
+  .work-track-nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .work-track-header {
     grid-template-columns: minmax(0, 1fr) minmax(250px, 0.8fr);

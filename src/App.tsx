@@ -3,6 +3,7 @@ import type { KeyboardEvent as ReactKeyboardEvent, ReactNode } from "react";
 import ProjectPreview from "./components/ProjectPreview";
 import BackgroundSection from "./components/BackgroundSection";
 import DevelopmentWork from "./components/DevelopmentWork";
+import GraphicDesignWork from "./components/GraphicDesignWork";
 import { projects } from "./data/projects";
 import type { Project, ProjectCategory } from "./data/projects";
 import { profile } from "./data/profile";
@@ -832,9 +833,9 @@ function App() {
               </h2>
             </div>
             <p>
-              Explore interactive development projects and self-directed
-              virtual assistance samples that show how I build, organize, and
-              document work.
+              Explore a Figma design case study, interactive development
+              projects, and self-directed virtual assistance samples that show
+              how I design, build, organize, and document work.
             </p>
           </div>
           <nav className="work-track-nav" aria-label="Portfolio work types">
@@ -843,8 +844,13 @@ function App() {
               <strong>Virtual assistance</strong>
               <small>11 downloadable samples</small>
             </a>
-            <a href="#development-work">
+            <a href="#graphic-design-work">
               <span>01B</span>
+              <strong>Graphic design</strong>
+              <small>CodeCart Figma case study</small>
+            </a>
+            <a href="#development-work">
+              <span>01C</span>
               <strong>Web development</strong>
               <small>2 interactive systems</small>
             </a>
@@ -986,13 +992,39 @@ function App() {
           </section>
 
           <section
+            className="work-track graphic-design-showcase"
+            id="graphic-design-work"
+            aria-labelledby="graphic-design-showcase-title"
+          >
+            <header className="work-track-header">
+              <div className="work-track-title">
+                <span className="eyebrow">01B / GRAPHIC DESIGN</span>
+                <h3 id="graphic-design-showcase-title">
+                  Visual systems,
+                  <br />
+                  <em>made to be explored.</em>
+                </h3>
+              </div>
+              <div className="work-track-intro">
+                <span className="work-track-count">01 FIGMA CASE STUDY</span>
+                <p>
+                  CodeCart shows my approach to visual hierarchy, brand-led
+                  e-commerce UI, clear calls to action, and consistent layout
+                  decisions across seven connected screens.
+                </p>
+              </div>
+            </header>
+            <GraphicDesignWork />
+          </section>
+
+          <section
             className="work-track development-showcase"
             id="development-work"
             aria-labelledby="development-showcase-title"
           >
             <header className="work-track-header">
               <div className="work-track-title">
-                <span className="eyebrow">01B / WEB DEVELOPMENT</span>
+                <span className="eyebrow">01C / WEB DEVELOPMENT</span>
                 <h3 id="development-showcase-title">
                   Interactive systems,
                   <br />
@@ -1013,7 +1045,7 @@ function App() {
           <div className="work-conversion">
             <div>
               <span className="eyebrow">READY TO WORK TOGETHER</span>
-              <h3>Need a website, reliable virtual support, or both?</h3>
+              <h3>Need visual design, a website, reliable virtual support, or a mix?</h3>
               <p>
                 Share the result you need, the work involved, and your timeline.
                 I’ll reply by email so we can discuss the next step.
